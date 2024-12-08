@@ -1,0 +1,200 @@
+
+.logoNav{
+    width: 100px;
+}
+
+.dm-serif-display-regular {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .divNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titulo{
+    font-size: 60px;
+    margin-left: 15px;
+  }
+
+  .linksNav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px ;
+  }
+
+  .linksNav a{
+
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+
+  }
+
+  .linksNav p{
+    margin: 0;
+  }
+
+  .barraSuperior{
+    background-color: black;
+    color: white;
+  }
+
+  .portada{
+    width: 100%;
+    margin-top: 25px;
+    background-color: black;
+    z-index: 150;
+    position: relative;
+   
+  }
+
+  .portada img{
+    width: 100%;
+    object-fit: cover;
+    height: 700px;
+  }
+
+  .contenedorDeImgPortada{
+position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bloqueColor{
+    position: absolute;
+    background-color: rgba(50, 50, 50, 0.348);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .textoPortada{
+    color: white;
+    font-size: 100px;
+  }
+
+  .poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+  .contenedorMain{
+    margin-top: 80px;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .contenedorPiscina img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+
+  .contenedorPiscina{
+    position: relative;
+    width: 55%;
+    height: 100%;
+  }
+
+  .bloquePiscina{
+    background-color: rgba(0, 0, 0, 0.232);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   display: flex;
+   justify-content: end;
+   align-items: end;
+
+  }
+  
+  .bloquePiscina:hover{
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .bloquePiscina p{
+    color: white;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.863);
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .contenedorDe4{
+    width: 40%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .contenedorCard{
+    position: relative;
+    width: 45%;
+    margin: 7px;
+    overflow: hidden;
+  }
+
+  .contenedorCard img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .barraCatalogo{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
+ .contenedorCardsGaleria{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .cardsGaleria{
+    position: relative;
+    height: 250px;
+    border-radius: 25px;
+    width: 345px;
+    height: 500px;
+    margin-top: 25px;
+    margin-left: 2px;
+    margin-right: 2px;
+ }
+
+ .cardsGaleria img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+ }

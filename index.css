@@ -618,7 +618,7 @@
 
   .contenedorPiscina{
     position: relative;
-    width: 100%;
+    width: 90%;
     height: 100%;
     margin-right: 0px;
   }
@@ -640,13 +640,13 @@
  
   
   .contenedorDe4{
-    width: 100%;
+    width: 90%;
     height: auto;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
     height: auto;
-    margin-top: 0px;
+    margin-top: 10px;
    
   }
 

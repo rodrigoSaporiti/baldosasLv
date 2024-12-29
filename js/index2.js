@@ -6,31 +6,55 @@ const flechaDerechaDestacados = document.getElementById("flechaDerechaDestacados
 const destacados1= document.getElementById("destacados1")
 const destacados2= document.getElementById("destacados2")
 
-function siTocoCualquierFlecha(flecha){
-
-    flecha.addEventListener("click",()=>{
-
-
-        destacados1.classList.toggle("d-none")
-        destacados2.classList.toggle("d-none");
-        reiniciarCarrusel();
-
-    })
-
-}
+const contenedorDestacados = document.querySelector(".destacadosMosaicos")
 
 
 
-siTocoCualquierFlecha(flechaDerechaDestacados);
-siTocoCualquierFlecha(flechaIzquierdaDestacados);
+flechaDerechaDestacados.addEventListener("click",()=>{
 
 
-function correrCarrusel() {
-    carruselIntervalo = setInterval(() => {
-        destacados1.classList.toggle("d-none")
-        destacados2.classList.toggle("d-none");
-    }, 5000); // Cambia cada 4 segundos
-  }
+    const anchoContenedor = contenedorDestacados.offsetWidth; 
+
+contenedorDestacados.scrollBy({
+
+
+    left:anchoContenedor,
+    behavior:"smooth",
+})
+
+
+})
+
+
+flechaIzquierdaDestacados.addEventListener("click",()=>{
+  
+    const anchoContenedor = contenedorDestacados.offsetWidth; 
+
+contenedorDestacados.scrollBy({
+
+
+    left: -anchoContenedor,
+    behavior:"smooth",
+})
+
+
+})
+
+
+let moverIzquierda = true;
+
+const intervalo = setInterval(() => {
+  const anchoContenedor = contenedorDestacados.offsetWidth;
+  
+  contenedorDestacados.scrollBy({
+    left: moverIzquierda ? -anchoContenedor : anchoContenedor, // Si moverIzquierda es true, desplaza a la izquierda, sino a la derecha
+    behavior: "smooth",
+  });
+  
+  // Alternar la dirección de desplazamiento
+  moverIzquierda = !moverIzquierda;
+}, 4000);  // 2000 ms = 2 segundos
+
 
  // Función para reiniciar el carrusel
     function reiniciarCarrusel() {
@@ -38,4 +62,4 @@ function correrCarrusel() {
     correrCarrusel(); // Lo reinicia
   }
 
-  correrCarrusel();
+

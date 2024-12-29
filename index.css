@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 
 .logoNav{
     width: 70px;
@@ -382,9 +385,7 @@
   margin-top: 100px;
  }
 
- body{
-  overflow-x: hidden;
- }
+ 
 
  .lineaFooter{
   border-top: 2px solid  #bfbbbb ;
@@ -549,9 +550,11 @@
       
 
       .destacadosMosaicos{
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
-        margin-top: 15px;
+        margin-top: 0px;
+        height: auto;
+        overflow-x: auto;
        }
 
        .cardDestacados {
@@ -565,15 +568,23 @@
       .destacados1{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items:center ;
+        min-width: 450px; /* Ancho fijo para cada tarjeta */
+        height: 500px; /* Alto de las tarjetas */
+        margin-right: 10px; /* Espaciado entre tarjetas */
+        flex-shrink: 0; /* Evita que las tarjetas se encojan */
+       
+        
        }
       
        .destacados2{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items:center ;
+        min-width: 450px; /* Ancho fijo para cada tarjeta */
+        height: 500px; /* Alto de las tarjetas */
+        margin-right: 10px; /* Espaciado entre tarjetas */
+        flex-shrink: 0; /* Evita que las tarjetas se encojan */
+        font-size: 20px;
+        
        }
 
        .contenedorPdestacados{
@@ -589,9 +600,7 @@
         font-size: 8px;
        }
 
-       .flechaDestacado{
-        transform: scale(0.8);
-       }
+       
 
        
   .contenedorMain{
@@ -633,7 +642,6 @@
    display: flex;
    justify-content: end;
    align-items: end;
-
   }
 
 
@@ -651,11 +659,11 @@
   }
 
   .contenedorCard{
-    width: 50%;
+    width: 48%;
     position: relative;
     height: auto;
     overflow: hidden;
-    margin: 0;
+    margin: 1%;
   }
 
   .contenedorCard img{
@@ -684,7 +692,7 @@
     height: 250px;
     border-radius: 25px;
     width: 100%;
-    height: 500px;
+    height: 400px;
     margin-top: 25px;
     margin-left: 2px;
     margin-right: 2px;
@@ -703,10 +711,28 @@
   margin: 0 auto;
   margin-top: 25px;
   display: flex;
-  justify-content: space-between;
-  height: 250px;
+  justify-content: none;
+  overflow-x: auto;
+
  }
 
+
+
+
+
+
+ .proyectosYpreguntas::-webkit-scrollbar{
+  width: 0;
+ }
+
+ .proyectos{
+  min-width: 250px; /* Ancho fijo para cada tarjeta */
+  height: 300px; /* Alto de las tarjetas */
+  margin-right: 10px; /* Espaciado entre tarjetas */
+  flex-shrink: 0; /* Evita que las tarjetas se encojan */
+  font-size: 20px;
+ 
+ }
  
  .proyectos img{
 
@@ -732,10 +758,23 @@
   font-size: 20px;
  }
 
+ .preguntas{
+  min-width: 250px; /* Ancho fijo para cada tarjeta */
+  height: 300px; /* Alto de las tarjetas */
+  margin-right: 10px; /* Espaciado entre tarjetas */
+  flex-shrink: 0; /* Evita que las tarjetas se encojan */
+  font-size: 20px;
+ 
+ }
 
+
+
+ .flechaDestacado{
+display: none;
 }
 
 
+}
 
 /* Extra pequeño (mobile, en orientación vertical) */
 @media (max-width: 575px) {

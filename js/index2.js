@@ -63,3 +63,22 @@ const intervalo = setInterval(() => {
   }
 
 
+  const paginacionHome = document.querySelector(".paginacionHome");
+  console.log(paginacionHome)
+
+
+  const linksNav = document.querySelectorAll(".dropdown-menu a")
+
+  console.log(linksNav)
+
+
+  linksNav.forEach(element => {
+
+    element.addEventListener("click",()=>{
+
+      localStorage.setItem("paginacion", element.textContent);
+      
+
+    })
+    
+  });

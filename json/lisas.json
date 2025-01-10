@@ -1,0 +1,193 @@
+
+
+[
+    {"id":"crema1","titulo":"Crema 1","img":"crema1.jpg"},
+    {"id":"crema2","titulo":"Crema 2","img":"crema2.jpg"},
+
+    {
+        "id": "amarillo1",
+        "titulo": "Amarillo 1",
+        "img": "amarillo1.jpg"
+    },
+    {
+        "id": "amarillo2",
+        "titulo": "Amarillo 2",
+        "img": "amarillo2.jpg"
+    },
+    {
+        "id": "amarillo3",
+        "titulo": "Amarillo 3",
+        "img": "amarillo3.jpg"
+    },
+    {
+        "id": "ocre1",
+        "titulo": "Ocre 1",
+        "img": "ocre1.jpg"
+    },
+    {
+        "id": "ocre2",
+        "titulo": "Ocre 2",
+        "img": "ocre2.jpg"
+    },
+    {
+        "id": "mostaza",
+        "titulo": "Mostaza",
+        "img": "mostaza.jpg"
+    },
+    {
+        "id": "naranja",
+        "titulo": "Naranja",
+        "img": "naranja.jpg"
+    },
+    {
+        "id": "cuero1",
+        "titulo": "Cuero 1",
+        "img": "cuero1.jpg"
+    },
+    {
+        "id": "cuero2",
+        "titulo": "Cuero 2",
+        "img": "cuero2.jpg"
+    },
+    {
+        "id": "cuero3",
+        "titulo": "Cuero 3",
+        "img": "cuero3.jpg"
+    },
+    {
+        "id": "rosado1",
+        "titulo": "Rosado 1",
+        "img": "rosado1.jpg"
+    },
+    {
+        "id": "rosado2",
+        "titulo": "Rosado 2",
+        "img": "rosado2.jpg"
+    },
+    {
+        "id": "rosado3",
+        "titulo": "Rosado 3",
+        "img": "rosado3.jpg"
+    },
+    {
+        "id": "rosado4",
+        "titulo": "Rosado 4",
+        "img": "rosado4.jpg"
+    },
+    {
+        "id": "rosado5",
+        "titulo": "Rosado 5",
+        "img": "rosado5.jpg"
+    },
+    {
+        "id": "rojo1",
+        "titulo": "Rojo 1",
+        "img": "rojo1.jpg"
+    },
+    {
+        "id": "rojo2",
+        "titulo": "Rojo 2",
+        "img": "rojo2.jpg"
+    },
+    {
+        "id": "rojo3",
+        "titulo": "Rojo 3",
+        "img": "rojo3.jpg"
+    },
+    {
+        "id": "rojo4",
+        "titulo": "Rojo 4",
+        "img": "rojo4.jpg"
+    },
+    {
+        "id": "borravino",
+        "titulo": "Borravino",
+        "img": "borravino.jpg"
+    },
+    {
+        "id": "violeta1",
+        "titulo": "Violeta 1",
+        "img": "violeta1.jpg"
+    },
+    {
+        "id": "violeta2",
+        "titulo": "Violeta 2",
+        "img": "violeta2.jpg"
+    },
+    {
+        "id": "violeta3",
+        "titulo": "Violeta 3",
+        "img": "violeta3.jpg"
+    },
+    {
+        "id": "celeste1",
+        "titulo": "Celeste 1",
+        "img": "celeste1.jpg"
+    },
+    {
+        "id": "celeste2",
+        "titulo": "Celeste 2",
+        "img": "celeste2.jpg"
+    },
+    {
+        "id": "celeste3",
+        "titulo": "Celeste 3",
+        "img": "celeste3.jpg"
+    },
+    {
+        "id": "azul1",
+        "titulo": "Azul 1",
+        "img": "azul1.jpg"
+    },
+    {
+        "id": "azul2",
+        "titulo": "Azul 2",
+        "img": "azul2.jpg"
+    },
+    {
+        "id": "verde1",
+        "titulo": "Verde 1",
+        "img": "verde1.jpg"
+    },
+    {
+        "id": "verde2",
+        "titulo": "Verde 2",
+        "img": "verde2.jpg"
+    },
+    {
+        "id": "verde3",
+        "titulo": "Verde 3",
+        "img": "verde3.jpg"
+    },
+    {
+        "id": "verde4",
+        "titulo": "Verde 4",
+        "img": "verde4.jpg"
+    },
+    {
+        "id": "verde5",
+        "titulo": "Verde 5",
+        "img": "verde5.jpg"
+    },
+    {
+        "id": "verde6",
+        "titulo": "Verde 6",
+        "img": "verde6.jpg"
+    },
+
+    {
+        "id": "blanco1",
+        "titulo": "Blanco 1",
+        "img": "blanco1.jpg"
+    },
+    {
+        "id": "blanco2",
+        "titulo": "Blanco 2",
+        "img": "blanco2.jpg"
+    },
+    {
+        "id": "negro",
+        "titulo": "Negro",
+        "img": "negro.jpg"
+    }
+]

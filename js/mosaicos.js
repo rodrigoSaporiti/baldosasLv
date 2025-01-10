@@ -34,3 +34,6 @@ function renderizarMosaicos(data) {
     `;
   });
 }
+
+
+

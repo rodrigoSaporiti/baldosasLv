@@ -24,12 +24,9 @@
 
 .contenedorImagenes img{
     width: 100%;
+    width: 268px;
 }
 
-.contenedorSegundaImagen{
-    width: 100%;
-    margin-top: 30px;
-}
 
 .contenedorInfo{
     width: 33%;
@@ -43,4 +40,45 @@
 img:hover{
     opacity: 0.8;
     cursor: pointer;
+}
+
+.contenedorColores img{
+    width: 30px;
+    margin: 3px;
+}
+
+.contenedorColores{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contenedorGaleria{
+    width: 33%;
+}
+
+.contenedorGaleria img{
+    width: 100%;
+}
+
+.contenedorSegundaImagen{
+    width: 100%;
+}
+
+.contenedorSegundaImagen img{
+    height: 100%;
+}
+
+.contenedorMasImagenes{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 5px;
+    margin-top: 25px;
+}
+
+.contenedorMasImagenes img{
+    width: 32%;
+    height: 150px;
+    object-fit: cover;
+
 }

@@ -1,9 +1,4 @@
-const contenedorPrincipal = document.getElementById("contenedorPrincipal");
-
-
-
-
-let lisasData = []; // Variable global para almacenar los datos
+let mosaicosData = []; // Variable global para almacenar los datos
 
 // Cargar los datos desde el archivo JSON
 fetch('./json/lisas.json')
@@ -19,16 +14,22 @@ fetch('./json/lisas.json')
     console.error('Error al cargar el JSON:', error);
   });
 
-const contenedorColores = document.getElementById("contenedorColores");
+const contenedorCards = document.getElementById("contenedorCards");
 
 // Función para renderizar las tarjetas en el contenedor
 function renderizarMosaicos(data) {
   data.forEach((element, index) => {
-    contenedorColores.innerHTML += `
+    contenedorCards.innerHTML += `
     
-    <a href="lisa.html?id=${element.id}"> 
-   <img src="lisasBaldosas/${element.img}" alt="">
+      <div dat class="cardProductos">
+      <a class="m-0 p-0 text-black text-decoration-none" href="lisa.html?id=${element.id}">
+        <img lazy="loading" src="lisasBaldosas/${element.img}" alt="">
+        <div class="detalleCardProductos">
+          <p class="ms-5">${element.titulo}</p>
+        </div>
      </a>
+      </div>
+     
     `;
   });
 }

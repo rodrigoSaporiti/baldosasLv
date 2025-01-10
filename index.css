@@ -538,6 +538,23 @@ body{
   margin: 50px;
  }
 
+
+ .paginacionHome{
+  width: 71%;
+  margin: 0 auto;
+}
+
+.contenidoHome{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.contenidoHome p{
+  text-align: center;
+  margin: 0;
+}
  
 
  /* Extra pequeño (móviles pequeños, hasta 374px) */
@@ -1013,6 +1030,18 @@ display: none;
   font-size: 12px;
   
  }
+
+
+ .contenidoHome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.contenidoHome p{
+ font-size: 11px;
+}
 
 
 }

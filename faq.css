@@ -1,0 +1,114 @@
+.cardFaq{
+    width: 320px;
+    height: 425px;
+    margin: 10px;
+}
+
+.cardFaq p{
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin: 0;
+}
+
+.contenedorTexto p{
+    background-color: transparent;
+    color: black;
+    width: 90%; 
+    margin: 0 auto;
+    
+
+}
+
+.contenedorTexto{
+    border: 2px solid black;
+    width: 100%;
+    height: 350px;
+    
+}
+
+
+main{
+    width: 72%;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.contenedorP{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px ;
+}
+
+.scroll-y-container {
+    width: 300px; /* Ancho del contenedor */
+    height: 350px; /* Alto del contenedor */
+    overflow-y: auto; /* Habilitar scroll vertical */
+    border: 2px solid #000000;
+    padding: 10px;
+  }
+  
+  .scroll-y-container::-webkit-scrollbar {
+    width: 8px; /* Ancho del scroll vertical */
+  }
+  
+  .scroll-y-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color del track (fondo del scroll) */
+    border-radius: 4px; /* Bordes redondeados */
+  }
+  
+  .scroll-y-container::-webkit-scrollbar-thumb {
+    background: #888; /* Color del thumb (barra de desplazamiento) */
+    border-radius: 4px; /* Bordes redondeados */
+  }
+  
+  .scroll-y-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color del thumb al pasar el mouse */
+  }
+  
+  .contenedorInformacion{
+    width: calc(320px*3);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedorInformacion svg{
+   width: 20px;
+  }
+
+  .contenedorInformacion p {
+    font-size: 11x;
+  }
+
+
+
+  @media (max-width: 575px) {
+   
+    .cardFaq{
+      width: 320px;
+      height: 550px;
+  }
+
+  .contenedorTexto{
+    border: 2px solid black;
+    width: 100%;
+    height: 480px;
+    
+}
+
+.contenedorInformacion{
+  margin-top: 25px;
+}
+
+  }

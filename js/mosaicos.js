@@ -1,7 +1,7 @@
 let mosaicosData = []; // Variable global para almacenar los datos
 
 // Cargar los datos desde el archivo JSON
-fetch('json/mosaicos.json')
+fetch('json/mosaicosjson.json')
   .then(response => response.json())
   .then(data => {
     mosaicosData = data; // Guardar los datos en la variable global
@@ -22,10 +22,10 @@ function renderizarMosaicos(data) {
     contenedorCards.innerHTML += `
     
       <div dat class="cardProductos">
-      <a class="m-0 p-0 text-black text-decoration-none" href="baldosa.html?id=${element.id}">
+      <a class="m-0 p-0 text-black text-decoration-none" href="baldosa.html?id=${element.sku}">
         <img lazy="loading" src="mosaicos/${element.img}" alt="">
         <div class="detalleCardProductos">
-          <p>SKU ${index+1}</p>
+          <p>SKU ${element.sku}</p>
           <p>${element.tamaño}</p>
         </div>
      </a>
@@ -34,6 +34,7 @@ function renderizarMosaicos(data) {
     `;
   });
 }
+
 
 
 

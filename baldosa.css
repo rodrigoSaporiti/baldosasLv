@@ -82,3 +82,11 @@ img:hover{
     object-fit: cover;
 
 }
+
+.botones{
+    margin-top: 25px;
+}
+
+.botones button{
+    margin: 10px;
+}

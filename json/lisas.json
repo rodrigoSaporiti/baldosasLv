@@ -186,8 +186,24 @@
         "img": "blanco2.jpg"
     },
     {
+        "id": "gris1",
+        "titulo": "Gris 1",
+        "img": "gris1.jpg"
+    },
+    {
+        "id": "gris2",
+        "titulo": "Gris 2",
+        "img": "gris2.jpg"
+    },
+    {
+        "id": "gris3",
+        "titulo": "Gris 3",
+        "img": "gris3.jpg"
+    },
+    {
         "id": "negro",
         "titulo": "Negro",
         "img": "negro.jpg"
     }
 ]
+    

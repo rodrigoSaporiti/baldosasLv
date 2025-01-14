@@ -82,3 +82,4 @@ const intervalo = setInterval(() => {
     })
     
   });
+

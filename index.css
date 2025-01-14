@@ -556,6 +556,10 @@ body{
   margin: 0;
 }
  
+#flechaIzquierda, #flechaDerecha{
+  cursor: pointer;
+  user-select: none;
+}
 
  /* Extra pequeño (móviles pequeños, hasta 374px) */
 @media (max-width: 575px) {
@@ -1043,6 +1047,9 @@ display: none;
  font-size: 11px;
 }
 
+.dropdown{
+  margin: 12px;
+}
 
 }
 

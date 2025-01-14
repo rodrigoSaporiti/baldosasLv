@@ -1,0 +1,99 @@
+.contenedorPrincipal{
+    width: 72%;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    gap: 1%;
+}
+
+.contenedorImagenes{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contenedorImagenPrincipal{
+
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenedorImagenes img{
+    width: 100%;
+    width: 268px;
+}
+
+
+.contenedorInfo{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-left: 2px solid rgb(223, 222, 222);
+}
+
+.contenedorInfo img{
+    width: 60%;
+    height: 70%;
+}
+
+img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.contenedorColores img{
+    width: 30px;
+    margin: 3px;
+}
+
+.contenedorColores{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contenedorGaleria{
+    width: 33%;
+}
+
+.contenedorGaleria img{
+    width: 100%;
+}
+
+.contenedorSegundaImagen{
+    width: 100%;
+}
+
+.contenedorSegundaImagen img{
+    height: 100%;
+}
+
+.contenedorMasImagenes{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 5px;
+    margin-top: 25px;
+}
+
+.contenedorMasImagenes img{
+    width: 32%;
+    height: 150px;
+    object-fit: cover;
+
+}
+
+.botones{
+    margin-top: 25px;
+}
+
+.botones button{
+    margin: 10px;
+}

@@ -1,0 +1,4 @@
+[
+    {"img":"piscina2.png" , "tamaño":"50x50","titulo":"c/borde", "id" :"1"},
+    {"img":"piscina1.png" , "tamaño":"50x50","titulo":"sin borde", "id" :"2"}
+]

@@ -1,4 +1,93 @@
-// lupa
+
+const cardImg = document.getElementById("cardImg");
+
+const url = window.location.pathname;
+const urlSplit = url.split(/[./]/);
+console.log(urlSplit)
+
+const seccion = urlSplit[1];
+
+console.log(seccion)
+
+const pagHome = document.getElementById("pagHome");
+
+pagHome.textContent= seccion
+
+let banos = []
+
+// Cargar los datos desde el archivo JSON
+fetch(`/json/${seccion}.json`)
+  .then(response => response.json())
+  .then(data => {
+    console.log('Datos cargados:', data);
+     banos = data
+   mostrarImagenes(data);
+
+   flechaDer(data);
+   flechaIzq(data);
+  
+
+  })
+  .catch(error => {
+    console.error('Error al cargar el JSON:', error);
+  });
+
+
+
+  function mostrarImagenes(data){
+
+    data.forEach(element => {
+
+        cardImg.innerHTML+= `
+        
+        
+        <div  class="cardImg">
+            
+           
+
+            <img src="${seccion}/${element.nombre}" alt="">
+            
+        </div>
+
+        
+        `
+
+        
+// aplicar hacer click y aparezca imagenEngrande
+
+const todasLasImagenes = document.querySelectorAll(".cardImg");
+console.log(todasLasImagenes)
+
+
+
+todasLasImagenes.forEach(element => {
+    
+   element.addEventListener("click",(e)=>{
+
+   let srcCompleto = e.target.src;
+   let srcPartes = srcCompleto.split("/");
+   let src = srcPartes[srcPartes.length - 1];
+
+   console.log(src)
+   imagenGrande.src = `${seccion}/${src}`
+   imagenEnGrande.classList.toggle("d-none")
+   
+   })
+
+
+});
+
+
+
+
+
+        
+    });
+  }
+
+
+
+  // lupa
 
 const contenedor = document.querySelector('.contenedorImagen');
 const imagen = contenedor.querySelector('.zoomed-image');
@@ -21,30 +110,6 @@ contenedor.addEventListener('mouseleave', () => {
     imagen.style.transform = 'scale(1)'; // Restaurar tamaño original
 });
 
-// aplicar hacer click y aparezca imagenEngrande
-
-const todasLasImagenes = document.querySelectorAll(".cardImg");
-console.log(todasLasImagenes)
-
-
-
-todasLasImagenes.forEach(element => {
-    
-   element.addEventListener("click",(e)=>{
-
-   let srcCompleto = e.target.src;
-   let srcPartes = srcCompleto.split("/");
-   let src = srcPartes[srcPartes.length - 1];
-
-   console.log(src)
-   imagenGrande.src = `img/GALERIA/baños/${src}`
-   imagenEnGrande.classList.toggle("d-none")
-   
-   })
-
-
-});
-
 
 const imagenGrande = document.getElementById("imagenGrande");
 const imagenEnGrande = document.getElementById("imagenEnGrande");
@@ -61,4 +126,111 @@ closeImagenGrande.addEventListener("click",()=>{
 
 })
 
+const flechaIzquierda = document.getElementById("flechaIzquierda");
+const flechaDerecha = document.getElementById("flechaDerecha");
 
+
+function flechaDer(data){
+
+
+  flechaDerecha.addEventListener("click",()=>{
+
+    let srcCompleto = imagenGrande.src;
+    let srcPartes = srcCompleto.split("/");
+    let src = srcPartes[srcPartes.length - 1];
+ 
+    console.log(src)
+    const posicion = data.findIndex(e=> e.nombre === src)
+    console.log(posicion)
+
+    if(posicion< data.length-1){
+      let siguienteImagen = data[posicion+1].nombre;
+      let splitSiguiente = siguienteImagen.split("/");
+      let srcSiguiente = splitSiguiente[splitSiguiente.length-1];
+      console.log(srcSiguiente)
+      imagenGrande.src= `${seccion}/${srcSiguiente}`;
+      console.log(data[posicion+1])
+    }else{
+
+      let siguienteImagen = data[0].nombre;
+      let splitSiguiente = siguienteImagen.split("/");
+      let srcSiguiente = splitSiguiente[splitSiguiente.length-1];
+      console.log(srcSiguiente)
+      imagenGrande.src= `${seccion}/${srcSiguiente}`;
+      console.log(data[posicion+1])
+    
+    }
+
+
+  })
+
+
+}
+
+
+function flechaIzq(data){
+
+
+  flechaIzquierda.addEventListener("click",()=>{
+
+    let srcCompleto = imagenGrande.src;
+    let srcPartes = srcCompleto.split("/");
+    let src = srcPartes[srcPartes.length - 1];
+ 
+    console.log(src)
+    const posicion = data.findIndex(e=> e.nombre === src)
+    console.log(posicion)
+
+    if(posicion > 0){
+
+      let siguienteImagen = data[posicion-1].nombre;
+      let splitSiguiente = siguienteImagen.split("/");
+      let srcSiguiente = splitSiguiente[splitSiguiente.length-1];
+      console.log(srcSiguiente)
+      imagenGrande.src= `${seccion}/${srcSiguiente}`;
+      console.log(data[posicion+1])
+    }else{
+
+     
+      let siguienteImagen = data[data.length-1].nombre;
+      let splitSiguiente = siguienteImagen.split("/");
+      let srcSiguiente = splitSiguiente[splitSiguiente.length-1];
+      console.log(srcSiguiente)
+      imagenGrande.src= `${seccion}/${srcSiguiente}`;
+      console.log(data[posicion+1])
+    
+    }
+
+
+  })
+
+}
+
+
+
+  
+const inputs = document.querySelectorAll('input[name="galerias"]');
+
+
+inputs.forEach(element => {
+  
+  if(element.id ===seccion){
+
+    element.checked = true;
+  }
+
+ 
+
+  element.addEventListener("click",()=>{
+    let inputSeccion = element.value
+    window.location.href = `${inputSeccion}.html`
+  })
+
+  element.addEventListener("contextmenu",(e)=>{
+
+    alert("clickDErecho")
+
+  })
+
+
+});

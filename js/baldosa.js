@@ -40,7 +40,7 @@ const productId = urlParams.get('id');
 
 const contenedorImagenPrincipal = document.getElementById("contenedorImagenPrincipal")
 const contenedorSegundaImagen = document.getElementById("contenedorSegundaImagen");
-const textSKU = document.getElementById("textSKU")
+const textSKU = document.querySelectorAll("#textSKU")
 const tamano = document.getElementById("tamano");
 const unidadesMetro = document.getElementById("unidadesMetro");
 const peso = document.getElementById("peso")
@@ -69,10 +69,10 @@ function traerDataMosaico(data) {
  const mosaico =  data.find(e=> e.sku == productId);
 
 
+ textSKU.forEach(element => { element.textContent = `${mosaico.sku}`;});
 
   contenedorImagenPrincipal.src = `mosaicos/${mosaico.img}`
   contenedorSegundaImagen.src = `mosaicos2/${mosaico.sku}.jpg`
-  textSKU.textContent = `${mosaico.sku}`
   tamano.textContent = `${mosaico.tamaño}`
   unidadesMetro.textContent = `${mosaico.metro}`
   peso.textContent = `${mosaico.peso}`

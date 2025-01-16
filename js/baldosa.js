@@ -81,7 +81,6 @@ function traerDataMosaico(data) {
 }
 
 
-
 let imagenesMosaico =[];
 
 // Cargar los datos desde el archivo JSON

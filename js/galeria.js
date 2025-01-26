@@ -5,7 +5,7 @@ const url = window.location.pathname;
 const urlSplit = url.split(/[./]/);
 console.log(urlSplit)
 
-const seccion = urlSplit[1];
+const seccion = urlSplit[urlSplit.length-2];
 
 console.log(seccion)
 

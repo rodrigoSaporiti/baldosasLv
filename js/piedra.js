@@ -22,13 +22,14 @@ function renderizarMosaicos(data) {
     contenedorCards.innerHTML += `
     
       <div dat class="cardProductos">
-      <a class="m-0 p-0 text-black text-decoration-none" href="piscinaBaldosa.html?id=${element.id}">
+      <a class="m-0 p-0 text-black text-decoration-none" href="piedrasB.html?id=${element.id}">
 
       <img src="piedra/${element.img}" alt="">
         <div class="detalleCardProductos">
           <p>${element.titulo}</p>
           <p>${element.tamaño}</p>
         </div>
+          <p class="w-100 bg-dark text-white text-center">Ver más..</p>
      </a>
       </div>
      

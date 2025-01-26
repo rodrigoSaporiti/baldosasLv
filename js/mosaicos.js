@@ -28,12 +28,14 @@ function renderizarMosaicos(data) {
           <p>SKU ${element.sku}</p>
           <p>${element.tamaño}</p>
         </div>
+        <p class="w-100 bg-dark text-white text-center">Ver más..</p>
      </a>
       </div>
      
     `;
   });
 }
+
 
 
 

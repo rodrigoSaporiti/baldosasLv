@@ -2,8 +2,57 @@ body{
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
+.botonesArribaWsp{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 50000;
+}
+
+.flechaArriba{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #42424291;
+  margin-bottom: 10px;
+}
+
+.flechaArriba svg{
+  width: 20px;
+  margin-bottom: 5px;
+}
+
+.whatsapp-btn{
+  width: 60px;
+  height: 60px;
+  color: white;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.whatsapp-btn svg{
+  width: 30px;
+
+}
+
 .logoNav{
-    width: 70px;
+    width: 50px;
     margin: 0;
 }
 
@@ -22,7 +71,7 @@ body{
   }
 
   .titulo{
-    font-size: 40px;
+    font-size: 30px;
     margin: 0;
     margin-left: 6px;
   }
@@ -31,7 +80,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 25px ;
   }
@@ -40,7 +89,11 @@ body{
 
     text-decoration: none;
     color: black;
-    font-size: 17px;
+    font-size: 14px;
+  }
+
+  .linksNav button{
+    font-size: 14px ;
   }
 
   .linksNav a:hover{
@@ -83,6 +136,21 @@ body{
     position: relative;
   
   }
+
+
+  
+  .animar {
+    opacity: 0;
+    transform: translateY(20px); /* Empujar el elemento hacia abajo inicialmente */
+    transition: opacity 0.1s ease, transform 0.6s ease;
+  }
+  
+  .animar.visible {
+    opacity: 1;
+    transform: translateY(0); /* Vuelve a su posición original */
+  }
+  
+  
 
   .portada img{
     width: 100%;
@@ -301,7 +369,7 @@ body{
 }
 
 .cardDestacados:hover {
-  transform: scale(1.2); /* Ampliar con hover */
+  transform: scale(1.06); /* Ampliar con hover */
 }
 
  .cardDestacados img{
@@ -365,7 +433,7 @@ body{
 
 
  .footerEmpresa img{
-  width: 400px;
+  width: 300px;
  }
 
 .footer{
@@ -397,7 +465,7 @@ body{
 }
 
 .redesSociales svg{
-  width: 30px;
+  width: 25px;
   cursor: pointer;
   
 }
@@ -410,11 +478,11 @@ body{
 
 
 .footerPaginas{
-  width: 60%;
+  width: 80%;
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 50px;
  }
 
 
@@ -473,7 +541,7 @@ body{
 
 
  .proyectos p{
-  font-size: 50px;
+  font-size: 30px;
  }
 
  .preguntas{
@@ -484,7 +552,7 @@ body{
  }
 
  .preguntas p{
-  font-size: 50px;
+  font-size: 30px;
  }
 
  .preguntas div{
@@ -564,6 +632,19 @@ body{
  /* Extra pequeño (móviles pequeños, hasta 374px) */
 @media (max-width: 575px) {
   /* Estilos */
+
+
+  .carousel-indicators button {
+    width: 10px !important ;  /* Aumenta el ancho de los indicadores */
+    height: 10px !important; /* Aumenta el alto de los indicadores */
+    border-radius: 50%; /* Mantiene la forma redonda */
+    background-color: #353535 !important; /* Color del indicador inactivo */
+    border: none; /* Elimina el borde */
+    transition: background-color 0.3s ease !important ; /* Suaviza el cambio de color */
+  }
+
+
+
   .logoNav{
     width: 35px;
   }
@@ -669,7 +750,12 @@ body{
     text-decoration: none;
     color: black;
     font-size: 17px;
-    margin: 20px;
+    margin: 15px;
+  }
+
+  .linksNav button{
+    font-size: 17px;
+    margin: 0px;
   }
 
   .dropdown-menu a{
@@ -685,9 +771,10 @@ body{
   }
 
 
-
   .portada{
     width: 100%;
+    height: 1500px;
+    max-height: 450px;
     margin-top: 25px;
     z-index: 150;
     position: relative;
@@ -695,9 +782,10 @@ body{
 
   .portada img{
     width: 100%;
-    object-fit: contain;
-    height: auto;
+    object-fit: cover;
+    height: 450px;
     }
+
 
     .contenedorTextoPortada{
       position: absolute;
@@ -979,10 +1067,411 @@ display: none;
   align-items: center;
 }
 
+.footerEmpresa img{
+  width: 200px;
+}
 .redesSociales{
   display: flex;
   justify-content: space-evenly;
+  width: 40%;
+  margin-top: 10px;
+}
+
+.redesSociales svg{
+  width: 20px;
+  cursor: pointer;
+  
+}
+
+
+
+.footerPaginas{
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 25px;
+ }
+ .footerPaginas p{
+  font-size: 12px;
+  text-align: center;
+ }
+
+
+ .footerPaginas svg{
+  width: 30px;
+  
+ }
+ .footerPaginas div{
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+ 
+ }
+
+
+ .desarrolloBy{
+  width: 100%;
+ 
+  margin-bottom: 10px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center; 
+ }
+
+ .desarrolloBy p{
+  margin:0;
+  font-size: 12px;
+  
+ }
+
+
+ .contenidoHome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.contenidoHome p{
+ font-size: 11px;
+}
+
+.dropdown{
+  margin: 12px;
+}
+
+
+
+
+
+
+
+}
+
+
+/* Pequeño (tabletas, en orientación vertical) */
+@media (min-width: 576px) and (max-width: 991px) {
+  /* Estilos */
+
+
+
+  .contenedorTextoPortada p{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  
+
+ 
+  .pantallaNegra{
+    width: 100%;
+    height: 100vh;
+    background-color: #000000ea;
+  position: fixed;
+    z-index: 250;
+  }
+
+
+  
+  
+  .linksNav{
+    background-color: white;
+    height: 100vh;
+    max-height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 0px ;
+    z-index: 3000;
+    animation: izqAderecha .4s linear;
+
+  }
+
+
+.quitar{
+  animation: derAizquierda .4s linear;
+  
+}
+
+  @keyframes izqAderecha{
+    from{
+      transform: translateX(-200%)
+    }
+    to{
+      transform: translateX(0);
+    }
+  }
+ 
+  @keyframes derAizquierda{
+    from{
+      transform: translateX(0)
+    }
+    to{
+      transform: translateX(-200%);
+    }
+  }
+
+
+
+  .linksNav a{
+
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    margin: 20px;
+  }
+
+  .dropdown-menu a{
+    margin: 10px;
+  }
+
+ 
+  .linksNav a:hover{
+    border-bottom: 3px solid black;
+  }
+
+  .linksNav p{
+    margin: 0;
+  }
+
+  .linksNav button{
+    font-size: 25px;
+    margin: 5px;
+  }
+
+  .divNav svg{
+    margin-right: 0px;
+    margin-left: 0px;
+    transform: translateX(-100px) scale(1.2); 
+   }
+
+   
+
+  .portada{
+    width: 100%;
+    height: 1500px;
+    max-height: 450px;
+    margin-top: 25px;
+    z-index: 150;
+    position: relative;
+  }
+
+  .portada img{
+    width: 100%;
+    object-fit: cover;
+    height: 450px;
+    }
+
+
+    
+
+       
+  .contenedorMain{
+    width: 100%;
+   
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+
+
+  .contenedorPiscina img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+
+  .contenedorPiscina{
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin-right: 0px;
+  }
+
+  .bloquePiscina{
+    background-color: rgba(0, 0, 0, 0.232);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   display: flex;
+   justify-content: end;
+   align-items: end;
+  }
+
+
+ 
+  
+  .contenedorDe4{
+    width: 90%;
+    height: auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    margin-top: 10px;
+   
+  }
+
+
+  .proyectosYpreguntas{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+   }
+  
+   .proyectos{
+    width: 49%;
+    position: relative;
+    
+   }
+  
+   .proyectos img{
+  
+    width: 100%;
+    position: relative;
+  
+   }
+  
+   .proyectos div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.175);
+    border: 1px solid black;
+   }
+  
+  
+   .proyectos p{
+    font-size: 20px;
+   }
+  
+   .preguntas{
+    width: 49%;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+   }
+  
+   .preguntas p{
+    font-size: 20px;
+   }
+  
+   .preguntas div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.90);
+   
+   }
+  
+   .preguntas img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
+
+   
+  .contenedorCard{
+    width: 48%;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    margin: 1%;
+  }
+
+  .contenedorCard img{
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+  }
+
+
+
+   .contenedorCardsGaleria2{
+    position: relative;
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+ }
+
+ .contenedorCardsGaleria{
+  margin: 0 auto;
+ }
+ .cardsGaleria{
+    position: relative;
+    border-radius: 25px;
+    width: 100%;
+    height: 250px;
+    margin-top: 25px;
+    margin-left: 2px;
+    margin-right: 2px;
+ }
+
+ .cardsGaleria img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+ }
+
+
+ 
+
+.footerEmpresa img{
+  width: 300px;
+ }
+
+.footer{
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(231, 231, 231, 0.085);
+  margin-top: 40px;
+
+}
+
+
+.lineaFooter{
+  border-top: 2px solid  #bfbbbb ;
+  margin-top: 60px;
+ }
+
+.footerEmpresa{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.redesSociales{
+  display: flex;
+  justify-content: space-evenly;
+  width: 25%;
   margin-top: 25px;
 }
 
@@ -1034,46 +1523,275 @@ display: none;
   font-size: 12px;
   
  }
+ 
 
 
- .contenidoHome{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 25px;
-}
-
-.contenidoHome p{
- font-size: 11px;
-}
-
-.dropdown{
-  margin: 12px;
-}
 
 }
 
-/* Extra pequeño (mobile, en orientación vertical) */
-@media (max-width: 575px) {
-  /* Estilos */
-}
 
-/* Pequeño (tabletas, en orientación vertical) */
-@media (min-width: 576px) and (max-width: 767px) {
-  /* Estilos */
-}
-
-/* Mediano (tabletas, en orientación horizontal y algunos smartphones más grandes) */
-@media (min-width: 768px) and (max-width: 991px) {
-  /* Estilos */
-}
 
 /* Grande (desktops pequeños y laptops) */
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Estilos */
+
+  
+  .linksNav{
+    display: flex;
+   flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 25px ;
+  }
+
+  .linksNav a{
+
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+.linksNav p{
+    margin: 0;
+  }
+
+  .linksNav button{
+    font-size: 20px;
+  }
+
+  
+
+ .footerEmpresa img{
+  width: 400px;
+ }
+
+.footer{
+  width: 98%;
+  margin: 0 auto;
+  background-color: rgba(231, 231, 231, 0.085);
+  margin-top: 80px;
+
 }
 
-/* Extra grande (desktops grandes) */
-@media (min-width: 1200px) {
-  /* Estilos */
+
+.lineaFooter{
+  border-top: 2px solid  #bfbbbb ;
+  margin-top: 100px;
+ }
+
+.footerEmpresa{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.redesSociales{
+  display: flex;
+  justify-content: space-evenly;
+  width: 25%;
+  margin-top: 30px;
+}
+
+.redesSociales svg{
+  width: 30px;
+  cursor: pointer;
+}
+
+.redesSociales svg :hover{
+ 
+  color: rgb(187, 187, 187);
+  background-color: rgb(187, 187, 187);
+}
+
+
+.footerPaginas{
+  width: 98%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-top: 40px;
+ }
+
+
+ .footerPaginas svg{
+  width: 30px;
+ }
+
+
+  
+
+   
+       
+  .contenedorMain{
+    width: 100%;
+   
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+
+
+  .contenedorPiscina img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+
+  .contenedorPiscina{
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin-right: 0px;
+  }
+
+  .bloquePiscina{
+    background-color: rgba(0, 0, 0, 0.232);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   display: flex;
+   justify-content: end;
+   align-items: end;
+  }
+
+
+ 
+  
+  .contenedorDe4{
+    width: 90%;
+    height: auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    margin-top: 10px;
+   
+  }
+
+
+  .proyectosYpreguntas{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+   }
+  
+   .proyectos{
+    width: 49%;
+    position: relative;
+    
+   }
+  
+   .proyectos img{
+  
+    width: 100%;
+    position: relative;
+  
+   }
+  
+   .proyectos div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.175);
+    border: 1px solid black;
+   }
+  
+  
+   .proyectos p{
+    font-size: 20px;
+   }
+  
+   .preguntas{
+    width: 49%;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+   }
+  
+   .preguntas p{
+    font-size: 20px;
+   }
+  
+   .preguntas div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.90);
+   
+   }
+  
+   .preguntas img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
+
+
+   
+  .contenedorCard{
+    width: 48%;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    margin: 1%;
+  }
+
+  .contenedorCard img{
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+  }
+
+
+
+   .contenedorCardsGaleria2{
+    position: relative;
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+ }
+
+ .contenedorCardsGaleria{
+  margin: 0 auto;
+ }
+ .cardsGaleria{
+    position: relative;
+    border-radius: 25px;
+    width: 100%;
+    height: 250px;
+    margin-top: 25px;
+    margin-left: 2px;
+    margin-right: 2px;
+ }
+
+ .cardsGaleria img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%
+
+
+}
+
+}
+

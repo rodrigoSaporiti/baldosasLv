@@ -1,0 +1,21 @@
+[
+  {
+    "img": "escalon.png",
+    "tamaño": "20x28",
+    "titulo": "Escalon liso",
+    "id": "1"
+  },
+  {
+    "img": "escalonesBarra.png",
+    "tamaño": "20x28",
+    "titulo": "Escalon con barras",
+    "id": "2"
+  },
+  {
+    "img": "escalonLineal.png",
+    "tamaño": "20x28",
+    "titulo": "Escalon con diagonales",
+    "id": "3"
+  },
+  { "img": "zocalo.jpg", "tamaño": "08x20", "titulo": "Zócalo", "id": "4" }
+]

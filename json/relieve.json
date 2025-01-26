@@ -1,0 +1,12 @@
+[
+    {"img":"colonial.png" , "tamaño":"25x25","titulo":"Colonial", "id" :"1"},
+    {"img":"flor.png" , "tamaño":"25x25","titulo":"Flor", "id" :"2"},
+    {"img":"4panes.png" , "tamaño":"15x30","titulo":"4 Panes", "id" :"3"},
+    {"img":"californiana.png" , "tamaño":"15x30","titulo":"Californiana", "id" :"4"},
+    {"img":"14barras.png" , "tamaño":"20x20","titulo":"14 Barras", "id" :"5"},
+    {"img":"gallo.png" , "tamaño":"20x20","titulo":"Pata de gallo", "id" :"6"},
+    {"img":"similpiedra.png" , "tamaño":"20x20","titulo":"Simil piedra", "id" :"7"},
+    {"img":"64panes.png" , "tamaño":"40x40","titulo":"64 Panes", "id" :"8"},
+    {"img":"pulida.png" , "tamaño":"40x40","titulo":"Pulida", "id" :"9"}
+    
+]

@@ -97,3 +97,128 @@ img:hover{
 .botones button{
     margin: 10px;
 }
+
+
+
+@media (max-width: 575px){
+
+    .contenedorPrincipal{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: flex;
+        flex-direction:column;
+        gap: 1%;
+    }
+
+
+    .contenedorImagenes{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+
+    .contenedorImagenPrincipal{
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .contenedorImagenes img{
+        width: 200px;
+    }
+    
+    .botones{
+        margin-top: 25px;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .botones button{
+        margin: 5px;
+        width: 200px;
+    }
+    
+    
+
+    
+.contenedorInfo{
+    width: 95%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-left: 0px solid rgb(223, 222, 222);
+}
+
+.contenedorInfo img{
+    width: 95%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+
+.contenedorColores img{
+    width: 30px;
+    margin: 3px;
+}
+
+.contenedorColores{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+
+
+
+.contenedorGaleria{
+    width: 100%;
+}
+
+.contenedorGaleria img{
+    width: 100%;
+}
+
+.contenedorSegundaImagen{
+    width: 100%;
+}
+
+.contenedorSegundaImagen img{
+    height: 100%;
+}
+
+.contenedorMasImagenes{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 5px;
+    margin-top: 25px;
+}
+
+.contenedorMasImagenes img{
+    width: 32%;
+    height: 150px;
+    object-fit: cover;
+
+}
+
+
+}
+
+
+@media (min-width: 576px) and (max-width: 991px) {
+
+}

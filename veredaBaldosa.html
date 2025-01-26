@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Baldosas LV</title>
   <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="productos.css">
+  <link rel="stylesheet" href="producto.css">
+  <link rel="stylesheet" href="lisa.css">
+  <link rel="stylesheet" href="galeria.css">
   <link rel="icon" href="img/Lvgoogle.png" type="image/x-icon">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,10 +27,78 @@
 
 
 
+  <div id="imagenEnGrande" class="imagenEnGrande d-none">
+
+    <div id="closeImagenGrande" class=" closeImagenGrande">
+
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+        <path
+          d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+      </svg>
+
+      <p class="ms-1 text-white">CLOSE</p>
+
+    </div>
+
+
+    <svg id="flechaIzquierda" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-compact-left"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223" />
+    </svg>
+
+
+    <div class="contenedorImagen">
+
+      <img id="imagenGrande" src="img/GALERIA/baños/276969618_128941326373797_5985634521429029911_n (2)-min.jpg" alt=""
+        class="zoomed-image">
+
+
+    </div>
+
+
+    <svg id="flechaDerecha" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-compact-right"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671" />
+    </svg>
+
+
+  </div>
+
+
+  <div class="botonesArribaWsp">
+
+
+    <a href="#" class="flechaArriba" onclick="scrollToTop()">
+
+      <svg xmlns="http://www.w3.org/2000/svg" class="text-white" fill="currentColor" class="bi bi-chevron-up"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+      </svg>
+    </a>
+
+
+    <a href="https://wa.me/59892212234" class="whatsapp-btn" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+        <path
+          d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+      </svg>
+    </a>
+
+  </div>
+
+
+
+
+
+
+
   <nav>
 
     <div id="pantallaNegra" class="pantallaNegra d-none"></div>
-    <div id="pantallaNegraProductos" class="pantallaNegra d-none"></div>
 
 
     <div class="barraSuperior">
@@ -44,16 +114,18 @@
         <path fill-rule="evenodd"
           d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
       </svg>
-      <img class="logoNav" src="img/logo.png" alt="">
-      <h1 class="titulo dm-serif-display-regular">BALDOSAS LV</h1>
+      <a class="m-0 p-0 text-black d-flex text-decoration-none align-items-center" href="index.html">
+        <img class="logoNav" src="img/logo.png" alt="">
+        <h1 class="titulo dm-serif-display-regular">BALDOSAS LV</h1>
+      </a>
     </div>
 
 
 
-    <div id="linksNav" class="linksNav d-none  d-md-flex">
+    <div id="linksNav" class="linksNav d-none  d-lg-flex">
 
 
-      <div id="closeMenuMobile" class="d-md-none closeMenuMobile">
+      <div id="closeMenuMobile" class="d-lg-none closeMenuMobile">
 
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle"
           viewBox="0 0 16 16">
@@ -70,22 +142,20 @@
       <a href="index.html" class="border-bottom border-3 border-black ">INICIO</a>
 
 
-      <p class="d-none d-md-block">|</p>
+      <p class="d-none d-lg-block">|</p>
 
 
       <div class="dropdown">
         <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           PRODUCTOS
         </button>
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu dropdown-menu-end">
           <li><a class="dropdown-item" href="relieve.html">Con Relieve</a></li>
           <li><a class="dropdown-item" href="lisas.html">Lisas</a></li>
           <li><a class="dropdown-item" href="mosaicos.html">Mosaicos</a></li>
           <li><a class="dropdown-item" href="piscina.html">Piscina</a></li>
-          <li><a class="dropdown-item" href="escalones.html">Escalones</a></li>
-          <li><a class="dropdown-item" href="zocalos.html">Zócalos</a></li>
+          <li><a class="dropdown-item" href="escalones.html">Escalones y zócalos</a></li>
           <li><a class="dropdown-item" href="vereda.html">Vereda</a></li>
-
         </ul>
       </div>
 
@@ -94,22 +164,70 @@
 
 
 
-      <p class="d-none d-md-block">|</p>
-      <a href="galeria.html">GALERIA</a>
+      <p class="d-none d-lg-block">|</p>
 
-      <p class="d-none d-md-block">|</p>
+      <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          GALERIA POR SECCIÓN
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="banos.html">Baños</a></li>
+          <li><a class="dropdown-item" href="cocinas.html">Cocinas</a></li>
+          <li><a class="dropdown-item" href="dameros.html">Dameros</a></li>
+          <li><a class="dropdown-item" href="locales.html">Locales</a></li>
+          <li><a class="dropdown-item" href="exteriores.html">Exteriores</a></li>
+          <li><a class="dropdown-item" href="interiores.html">Interiores</a></li>
+        </ul>
+      </div>
 
-      <a href="catalogo.html">CATALOGO</a>
 
-      <p class="d-none d-md-block">|</p>
+      <p class="d-none d-lg-block">|</p>
+
+      <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          GALERIA POR COLOR
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="amarillas.html">Amarillas</a></li>
+          <li><a class="dropdown-item" href="azules.html">Azules</a></li>
+          <li><a class="dropdown-item" href="blancas.html">Blancas</a></li>
+          <li><a class="dropdown-item" href="cueros.html">Cueros</a></li>
+          <li><a class="dropdown-item" href="grises.html">Grises</a></li>
+          <li><a class="dropdown-item" href="negras.html">Negras</a></li>
+          <li><a class="dropdown-item" href="rojas.html">Rojas</a></li>
+          <li><a class="dropdown-item" href="verdes.html">Verdes</a></li>
+
+
+
+        </ul>
+      </div>
+
+      <p class="d-none d-lg-block">|</p>
+
+      <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          CATALOGO
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="banos.html">Mosaicos</a></li>
+          <li><a class="dropdown-item" href="cocinas.html">Lisas</a></li>
+
+        </ul>
+      </div>
+
+
+
+
+
+      <p class="d-none d-lg-block">|</p>
 
       <a href="proyectos.html">PROYECTOS</a>
 
-      <p class="d-none d-md-block">|</p>
+      <p class="d-none d-lg-block">|</p>
 
       <a href="faq.html">PREGUNTAS FRECUENTES</a>
 
-      <p class="d-none d-md-block">|</p>
+      <p class="d-none d-lg-block">|</p>
 
       <a href="contacto.html">CONTACTO</a>
 
@@ -122,10 +240,10 @@
   </nav>
 
 
+
   <div class="contentWhiteResponsive">
 
   </div>
-
 
 
   <div class="paginacionHome">
@@ -143,79 +261,82 @@
       <p> &nbsp; / </p>
       <p>&nbsp; PRODUCTOS</p>
       <p> &nbsp;/ </p>
-      <p class="text-uppercase fw-bold "> &nbsp; con relieve</p>
+
+      <p>&nbsp; <a class="text-decoration-none text-black" href="vereda.html">VEREDA</a></p>
+      <p> &nbsp;/ </p>
+      <p class="text-uppercase fw-bold "> &nbsp; <span id="textSKU"></span></p>
 
     </div>
 
   </div>
 
 
-  <main class="contenedorPrincipal">
-
-
-    <aside class="contenedorFiltrosPadre">
 
 
 
+  <main id="contenedorPrincipal" class="contenedorPrincipal">
 
 
-      <div class="filtroResponsive d-md-none">
+    <div class="contenedorImagenes">
 
-        <button id="btnFiltroResponsive" class="btn-dark btn d-flex justify-content-center  align-items-center">
-          filter
+      <div class="contenedorImagenPrincipal">
+        <img id="contenedorImagenPrincipal" src="" alt="">
+      </div>
 
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-toggles2" viewBox="0 0 16 16">
-            <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2s-.195-1.412-.535-2" />
+
+      <div class="botones">
+
+        <a class="m-0 p-0" href="https://wa.me/59892212234?text=Quiero%20más%20información%20sobre%20el%20producto%20X"
+          target="_blank">
+          <button class="btn btn-success text-uppercase"> <svg class="me-1" xmlns="http://www.w3.org/2000/svg"
+              width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+              <path
+                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+            </svg>Quiero saber más</button>
+        </a>
+
+        <button id="botonCompartir" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
             <path
-              d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6m0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8m.535-10a4 4 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126q.138-.534.41-1H4a2 2 0 1 0 0 4z" />
-            <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0" />
-          </svg>
-
-        </button>
+              d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5m-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" />
+          </svg></button>
 
       </div>
 
 
-      <div class="contenedorFiltros d-none d-md-flex">
 
-        <div id="closeMenuMobileFilter" class="d-md-none closeMenuMobile">
 
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle"
-            viewBox="0 0 16 16">
-            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
-            <path
-              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
-          </svg>
+      <P>¿Tienes dudas? <a class="text-black mt-3" href="faq.html">Click aquí</a></P>
 
-          <p class="m-0 ms-1">CLOSE</p>
+
+
+    </div>
+
+
+    <div class="contenedorInfo">
+
+      <h2 class="text-center">BALDOSA <span id="textSKU" class="text-uppercase"></span> <span id="tamano"></span></h2>
+
+      <p>Baldosa de vereda autorizada normativa UNIT 7:1942</p>
+
+      <p>* Nuestro proceso de fabricación se adapta a la demanda y la cola de pedidos, consulte stock.</p>
+
+
+
+      <div class="contenedorColores w-75">
+
+        <p class="m-0 mb-1 fw-bold">Colores para elegir</p>
+
+
+        <div id="contenedorColores" class="d-flex flex-wrap  m-0 m-auto">
 
         </div>
 
 
-        <input type="radio" name="talla" value="relieve" id="relieve">
-        <label for="relieve">Con relieve</label>
-
-        <input type="radio" name="talla" value="lisas" id="lisas">
-        <label for="lisas">Lisas</label>
-
-        <input type="radio" name="talla" value="mosaicos" id="mosaicos">
-        <label for="mosaicos">Mosaicos</label>
-
-        <input type="radio" name="talla" value="piscina" id="piscina">
-        <label for="piscina">Piscina</label>
-
-        <input type="radio" name="talla" value="piedra" id="piedra">
-        <label for="piedra">Piedra</label>
-
-        <input type="radio" name="talla" value="escalones" id="escalones">
-        <label for="escalones">Escalones</label>
-
-        <input type="radio" name="talla" value="zocalos" id="zocalos">
-        <label for="zocalos">Zócalos</label>
+        <p class="text-center mt-4 w-100">*Los colores pueden verse diferentes en función del dispositivo y pantalla que
+          utilices. Los colores reales pueden variar ligeramente.</p>
 
 
-
-        <button class="btn btn-dark d-sm-none  w-50 mt-5">OK</button>
 
       </div>
 
@@ -223,181 +344,10 @@
 
 
 
-    </aside>
-
-
-
-    <section class="contenedorCards">
-
-
-
-
-      <div class="cardProductos">
-
-        <img src="img/3d.png" alt="">
-        <div class="detalleCardProductos">
-          <p>SKU 001</p>
-          <p>20x20</p>
-        </div>
-
-      </div>
-
-      <div class="cardProductos">
-
-        <img src="img/3d.png" alt="">
-        <div class="detalleCardProductos">
-          <p>SKU 001</p>
-          <p>20x20</p>
-        </div>
-
-      </div>
-      <div class="cardProductos">
-
-        <img src="img/3d.png" alt="">
-        <div class="detalleCardProductos">
-          <p>SKU 001</p>
-          <p>20x20</p>
-        </div>
-
-      </div>
-      <div class="cardProductos">
-
-        <img src="img/3d.png" alt="">
-        <div class="detalleCardProductos">
-          <p>SKU 001</p>
-          <p>20x20</p>
-        </div>
-
-      </div>
-      <div class="cardProductos">
-
-        <img src="img/3d.png" alt="">
-        <div class="detalleCardProductos">
-          <p>SKU 001</p>
-          <p>20x20</p>
-        </div>
-
-      </div>
-      <div class="cardProductos">
-
-        <img src="img/3d.png" alt="">
-        <div class="detalleCardProductos">
-          <p>SKU 001</p>
-          <p>20x20</p>
-        </div>
-
-      </div>
-      <div class="cardProductos">
-
-        <img src="img/3d.png" alt="">
-        <div class="detalleCardProductos">
-          <p>SKU 001</p>
-          <p>20x20</p>
-        </div>
-
-      </div>
-      <div class="cardProductos">
-
-        <img src="img/3d.png" alt="">
-        <div class="detalleCardProductos">
-          <p>SKU 001</p>
-          <p>20x20</p>
-        </div>
-
-      </div>
-      <div class="cardProductos">
-
-        <img src="img/3d.png" alt="">
-        <div class="detalleCardProductos">
-          <p>SKU 001</p>
-          <p>20x20</p>
-        </div>
-
-      </div>
-      <div class="cardProductos">
-
-        <img src="img/3d.png" alt="">
-        <div class="detalleCardProductos">
-          <p>SKU 001</p>
-          <p>20x20</p>
-        </div>
-
-      </div>
-      <div class="cardProductos">
-
-        <img src="img/3d.png" alt="">
-        <div class="detalleCardProductos">
-          <p>SKU 001</p>
-          <p>20x20</p>
-        </div>
-
-      </div>
-      <div class="cardProductos">
-
-        <img src="img/3d.png" alt="">
-        <div class="detalleCardProductos">
-          <p>SKU 001</p>
-          <p>20x20</p>
-        </div>
-
-      </div>
-      <div class="cardProductos">
-
-        <img src="img/3d.png" alt="">
-        <div class="detalleCardProductos">
-          <p>SKU 001</p>
-          <p>20x20</p>
-        </div>
-
-      </div>
-      <div class="cardProductos">
-
-        <img src="img/3d.png" alt="">
-        <div class="detalleCardProductos">
-          <p>SKU 001</p>
-          <p>20x20</p>
-        </div>
-
-      </div>
-      <div class="cardProductos">
-
-        <img src="img/3d.png" alt="">
-        <div class="detalleCardProductos">
-          <p>SKU 001</p>
-          <p>20x20</p>
-        </div>
-
-      </div>
-      <div class="cardProductos">
-
-        <img src="img/3d.png" alt="">
-        <div class="detalleCardProductos">
-          <p>SKU 001</p>
-          <p>20x20</p>
-        </div>
-
-      </div>
-      <div class="cardProductos">
-
-        <img src="img/3d.png" alt="">
-        <div class="detalleCardProductos">
-          <p>SKU 001</p>
-          <p>20x20</p>
-        </div>
-
-      </div>
-
-
-
-    </section>
 
 
 
   </main>
-
-
-
-
 
 
 
@@ -546,9 +496,10 @@
 
   </div>
 
-
+  <script src="js/index2.js"></script>
   <script src="js/nav.js"></script>
-  <script src="js/filtro.js"></script>
+  <script src="js/compartir.js"></script>
+  <script src="js/veredaBaldosa.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>

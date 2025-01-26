@@ -1,0 +1,9 @@
+[
+    {"img":"panesgris.jpg" , "tamaño":"20x20","titulo":"Panes gris", "id" :"1"},
+    {"img":"panesAmarillo.jpg" , "tamaño":"20x20","titulo":"Panes amarillo", "id" :"2"},
+    {"img":"panesRojo.jpg" , "tamaño":"20x20","titulo":"Panes rojo", "id" :"3"},
+    {"img":"barraamarilla.png" , "tamaño":"20x20","titulo":"Barra amarilla", "id" :"4"},
+    {"img":"barraRoja.jpg" , "tamaño":"20x20","titulo":"Barra roja", "id" :"5"},
+    {"img":"64panes.png" , "tamaño":"40x40","titulo":"64 Panes", "id" :"8"},
+    {"img":"pulida.png" , "tamaño":"40x40","titulo":"Pulida", "id" :"9"}
+]

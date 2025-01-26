@@ -57,6 +57,7 @@ fetch('./json/mosaicosjson.json')
     console.log('Datos cargados:', mosaicosData);
 
     traerDataMosaico(mosaicosData)
+   
   })
   .catch(error => {
     console.error('Error al cargar el JSON:', error);
@@ -91,6 +92,8 @@ fetch('./json/imagenesMosaico.json')
     console.log('Datos cargados:', imagenesMosaico);
 
     traerImagenes(imagenesMosaico);
+    flechaDer(imagenesMosaico)
+    flechaIzq(imagenesMosaico)
 
   })
   .catch(error => {
@@ -187,3 +190,88 @@ contenedor.addEventListener('mouseleave', () => {
 });
 
 // aplicar hacer click y aparezca imagenEngrande
+
+
+
+
+
+
+const flechaIzquierda = document.getElementById("flechaIzquierda");
+const flechaDerecha = document.getElementById("flechaDerecha");
+
+
+function flechaDer(data){
+
+
+  flechaDerecha.addEventListener("click",()=>{
+
+    let srcCompleto = imagenGrande.src;
+    let srcPartes = srcCompleto.split("/");
+    let src = srcPartes[srcPartes.length - 1];
+ 
+    console.log(src)
+    const posicion = data.findIndex(e=> e.nombre === src)
+    console.log(posicion)
+
+    if(posicion< data.length-1){
+      let siguienteImagen = data[posicion+1].nombre;
+      let splitSiguiente = siguienteImagen.split("/");
+      let srcSiguiente = splitSiguiente[splitSiguiente.length-1];
+      console.log(srcSiguiente)
+      imagenGrande.src= `${seccion}/${srcSiguiente}`;
+      console.log(data[posicion+1])
+    }else{
+
+      let siguienteImagen = data[0].nombre;
+      let splitSiguiente = siguienteImagen.split("/");
+      let srcSiguiente = splitSiguiente[splitSiguiente.length-1];
+      console.log(srcSiguiente)
+      imagenGrande.src= `${seccion}/${srcSiguiente}`;
+      console.log(data[posicion+1])
+    
+    }
+
+
+  })
+
+
+}
+
+
+function flechaIzq(data){
+
+
+  flechaIzquierda.addEventListener("click",()=>{
+
+    let srcCompleto = imagenGrande.src;
+    let srcPartes = srcCompleto.split("/");
+    let src = srcPartes[srcPartes.length - 1];
+ 
+    console.log(src)
+    const posicion = data.findIndex(e=> e.nombre === src)
+    console.log(posicion)
+
+    if(posicion > 0){
+
+      let siguienteImagen = data[posicion-1].nombre;
+      let splitSiguiente = siguienteImagen.split("/");
+      let srcSiguiente = splitSiguiente[splitSiguiente.length-1];
+      console.log(srcSiguiente)
+      imagenGrande.src= `${seccion}/${srcSiguiente}`;
+      console.log(data[posicion+1])
+    }else{
+
+     
+      let siguienteImagen = data[data.length-1].nombre;
+      let splitSiguiente = siguienteImagen.split("/");
+      let srcSiguiente = splitSiguiente[splitSiguiente.length-1];
+      console.log(srcSiguiente)
+      imagenGrande.src= `${seccion}/${srcSiguiente}`;
+      console.log(data[posicion+1])
+    
+    }
+
+
+  })
+
+}

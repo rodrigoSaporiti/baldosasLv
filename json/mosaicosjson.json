@@ -1148,6 +1148,25 @@
     "peso": "1.5kg c/u",
     "esnuevo": "1",
     "sku": "115"
+  },
+  {
+    "id": "233",
+    "titulo": "BALDOSA MOSAICO CALCAREA",
+    "img": "116.png",
+    "tamaño": "20x20",
+    "metro": "25 Baldosas",
+    "peso": "1.5kg c/u",
+    "esnuevo": "1",
+    "sku": "116"
+  },
+  {
+    "id": "234",
+    "titulo": "BALDOSA MOSAICO CALCAREA",
+    "img": "117.png",
+    "tamaño": "20x20",
+    "metro": "25 Baldosas",
+    "peso": "1.5kg c/u",
+    "esnuevo": "1",
+    "sku": "117"
   }
-  
 ]

@@ -16,7 +16,7 @@ pagHome.textContent= seccion
 let banos = []
 
 // Cargar los datos desde el archivo JSON
-fetch(`/json/${seccion}.json`)
+fetch(`./json/${seccion}.json`)
   .then(response => response.json())
   .then(data => {
     console.log('Datos cargados:', data);

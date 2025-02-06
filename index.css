@@ -629,6 +629,20 @@ html {
   user-select: none;
 }
 
+
+.accordion {
+  --bs-accordion-active-bg: #ffffff !important;
+  --bs-accordion-active-color: #000000 !important;
+  --bs-accordion-btn-focus-box-shadow: none !important;
+}
+
+
+.acordeonResponsive li a{
+
+  font-size: 14px;
+
+}
+
  /* Extra pequeño (móviles pequeños, hasta 374px) */
 @media (max-width: 575px) {
   /* Estilos */
@@ -717,6 +731,7 @@ html {
     margin-top: 0px ;
     z-index: 3000;
     animation: izqAderecha .4s linear;
+   
   }
 
 
@@ -749,12 +764,12 @@ html {
 
     text-decoration: none;
     color: black;
-    font-size: 17px;
+    font-size: 14px;
     margin: 15px;
   }
 
   .linksNav button{
-    font-size: 17px;
+    font-size: 14px;
     margin: 0px;
   }
 

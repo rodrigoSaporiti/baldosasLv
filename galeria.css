@@ -1,5 +1,7 @@
+
+
 .contenedorCardsGaleria{
-    width: 80%;
+    width: 100%;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
@@ -110,7 +112,7 @@
 }
 
 .contenedorPadre{
-    width: 72%;
+    width: 80%;
     display: flex;
     justify-content: center;
     margin: 0 auto;

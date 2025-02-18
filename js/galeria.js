@@ -36,7 +36,7 @@ fetch(`json/${seccion}.json`)
 
   function mostrarImagenes(data){
 
-    data.forEach(element => {
+    data.reverse().forEach(element => {
 
         cardImg.innerHTML+= `
         
@@ -91,10 +91,15 @@ inputs.forEach(element => {
 
 
 
- // Iniciar Fancybox para las imágenes con el atributo data-fancybox="galeria"
- Fancybox.bind('[data-fancybox="galeria"]', {
-  // Aquí puedes agregar configuraciones personalizadas, si lo deseas
-  infinite: true,  // Hacer que la galería sea cíclica (pasar de la última a la primera imagen)
-  loop: true,      // Hacer que el lightbox se repita de nuevo al llegar al final
-  // Otros parámetros según lo que necesites
+Fancybox.bind('[data-fancybox="galeria"]', {
+    infinite: true,  
+    loop: true,      
+    zoom: {
+        maxScale: 5  // Aumenta el nivel máximo de zoom (por defecto es 3)
+    },
+    wheel: "zoom",  // Permite hacer zoom con la rueda del mouse
+    click: "zoom",  // Permite hacer zoom con un clic
+    Toolbar: {
+        display: ["zoom", "close"] // Asegura que el botón de zoom esté visible
+    }
 });

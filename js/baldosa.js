@@ -39,7 +39,9 @@ const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get('id');
 
 const contenedorImagenPrincipal = document.getElementById("contenedorImagenPrincipal")
+const enlaceImagen = document.getElementById("enlaceImagen")
 const contenedorSegundaImagen = document.getElementById("contenedorSegundaImagen");
+const enlaceImagen2 = document.getElementById("enlaceImagen2")
 const textSKU = document.querySelectorAll("#textSKU")
 const tamano = document.getElementById("tamano");
 const unidadesMetro = document.getElementById("unidadesMetro");
@@ -73,7 +75,9 @@ function traerDataMosaico(data) {
  textSKU.forEach(element => { element.textContent = `${mosaico.sku}`;});
 
   contenedorImagenPrincipal.src = `mosaicos/${mosaico.img}`
+  enlaceImagen.href = `mosaicos/${mosaico.img}`
   contenedorSegundaImagen.src = `mosaicos2/${mosaico.sku}.jpg`
+  enlaceImagen2.href = `mosaicos2/${mosaico.sku}.jpg`
   tamano.textContent = `${mosaico.tamaño}`
   unidadesMetro.textContent = `${mosaico.metro}`
   peso.textContent = `${mosaico.peso}`
@@ -92,8 +96,6 @@ fetch('./json/imagenesMosaico.json')
     console.log('Datos cargados:', imagenesMosaico);
 
     traerImagenes(imagenesMosaico);
-    flechaDer(imagenesMosaico)
-    flechaIzq(imagenesMosaico)
 
   })
   .catch(error => {
@@ -112,166 +114,13 @@ fetch('./json/imagenesMosaico.json')
     contenedorMasImagenes.innerHTML = ''; // Limpiar contenido anterior, si es necesario
     filtroImagenes.forEach(element => {
         contenedorMasImagenes.innerHTML += `
+        <a href="imagenesMosaico/${element.img}" id="enlaceImagen2" data-fancybox="gallery">
         <img src="imagenesMosaico/${element.img}">
+        </a>
         `;
     });
 
 
 
 
-    const contenedorPrincipal = document.getElementById("contenedorPrincipal");
-    const todasLasImagenes = contenedorPrincipal.querySelectorAll("img");
-    console.log(todasLasImagenes)
-    
-    
-    
-    todasLasImagenes.forEach(element => {
-        
-       element.addEventListener("click",(e)=>{
-    
-       let srcCompleto = e.target.src;
-     
-    
-       console.log(srcCompleto)
-       imagenGrande.src = `${srcCompleto}`
-       imagenEnGrande.classList.toggle("d-none")
-       
-       })
-    
-       
-    
-    
-    });
-    
-    
-    const imagenGrande = document.getElementById("imagenGrande");
-    const imagenEnGrande = document.getElementById("imagenEnGrande");
-    
-    
-    // cierre del close 
-    
-    const closeImagenGrande = document.getElementById("closeImagenGrande");
-    
-    closeImagenGrande.addEventListener("click",()=>{
-    
-        imagenEnGrande.classList.toggle("d-none")
-    
-    
-    })
-    
-   
-}
-
-
-
-  
-
-// lupa
-
-const contenedor = document.querySelector('.contenedorImagen');
-const imagen = contenedor.querySelector('.zoomed-image');
-
-contenedor.addEventListener('mousemove', (e) => {
-    const rect = contenedor.getBoundingClientRect();
-    const x = e.clientX - rect.left; // Coordenada X dentro del contenedor
-    const y = e.clientY - rect.top;  // Coordenada Y dentro del contenedor
-
-    // Ajustar el punto de origen de la transformación
-    const xPercent = (x / rect.width) * 100;
-    const yPercent = (y / rect.height) * 100;
-
-    imagen.style.transformOrigin = `${xPercent}% ${yPercent}%`;
-    imagen.style.transform = 'scale(2)'; // Nivel de zoom
-});
-
-contenedor.addEventListener('mouseleave', () => {
-    imagen.style.transformOrigin = 'center';
-    imagen.style.transform = 'scale(1)'; // Restaurar tamaño original
-});
-
-// aplicar hacer click y aparezca imagenEngrande
-
-
-
-
-
-
-const flechaIzquierda = document.getElementById("flechaIzquierda");
-const flechaDerecha = document.getElementById("flechaDerecha");
-
-
-function flechaDer(data){
-
-
-  flechaDerecha.addEventListener("click",()=>{
-
-    let srcCompleto = imagenGrande.src;
-    let srcPartes = srcCompleto.split("/");
-    let src = srcPartes[srcPartes.length - 1];
- 
-    console.log(src)
-    const posicion = data.findIndex(e=> e.nombre === src)
-    console.log(posicion)
-
-    if(posicion< data.length-1){
-      let siguienteImagen = data[posicion+1].nombre;
-      let splitSiguiente = siguienteImagen.split("/");
-      let srcSiguiente = splitSiguiente[splitSiguiente.length-1];
-      console.log(srcSiguiente)
-      imagenGrande.src= `${seccion}/${srcSiguiente}`;
-      console.log(data[posicion+1])
-    }else{
-
-      let siguienteImagen = data[0].nombre;
-      let splitSiguiente = siguienteImagen.split("/");
-      let srcSiguiente = splitSiguiente[splitSiguiente.length-1];
-      console.log(srcSiguiente)
-      imagenGrande.src= `${seccion}/${srcSiguiente}`;
-      console.log(data[posicion+1])
-    
-    }
-
-
-  })
-
-
-}
-
-
-function flechaIzq(data){
-
-
-  flechaIzquierda.addEventListener("click",()=>{
-
-    let srcCompleto = imagenGrande.src;
-    let srcPartes = srcCompleto.split("/");
-    let src = srcPartes[srcPartes.length - 1];
- 
-    console.log(src)
-    const posicion = data.findIndex(e=> e.nombre === src)
-    console.log(posicion)
-
-    if(posicion > 0){
-
-      let siguienteImagen = data[posicion-1].nombre;
-      let splitSiguiente = siguienteImagen.split("/");
-      let srcSiguiente = splitSiguiente[splitSiguiente.length-1];
-      console.log(srcSiguiente)
-      imagenGrande.src= `${seccion}/${srcSiguiente}`;
-      console.log(data[posicion+1])
-    }else{
-
-     
-      let siguienteImagen = data[data.length-1].nombre;
-      let splitSiguiente = siguienteImagen.split("/");
-      let srcSiguiente = splitSiguiente[splitSiguiente.length-1];
-      console.log(srcSiguiente)
-      imagenGrande.src= `${seccion}/${srcSiguiente}`;
-      console.log(data[posicion+1])
-    
-    }
-
-
-  })
-
-}
+  }

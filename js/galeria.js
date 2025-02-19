@@ -47,13 +47,10 @@ fetch(`json/${seccion}.json`)
     </a>
 </div>
 
-
         
         `
 
     
-
-
         
     });
   }

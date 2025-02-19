@@ -66,8 +66,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 5px;
   }
 
   .titulo{
@@ -82,7 +82,7 @@ html {
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    margin-top: 25px ;
+    margin-top: 15px ;
   }
 
   .linksNav a{
@@ -608,7 +608,7 @@ html {
 
 
  .paginacionHome{
-  width: 71%;
+  width: 79%;
   margin: 0 auto;
 }
 
@@ -640,9 +640,9 @@ html {
 .acordeonResponsive li a{
 
   font-size: 12px;
-
-
 }
+
+
 
  /* Extra pequeño (móviles pequeños, hasta 374px) */
 @media (max-width: 575px) {

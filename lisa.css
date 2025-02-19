@@ -1,5 +1,5 @@
 .contenedorPrincipal{
-    width: 72%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 40px;
     display: flex;
@@ -44,6 +44,11 @@
     height: 70%;
 }
 
+#tamanoLisas{
+    width: 100%;
+    height: 350px;
+}
+
 img:hover{
     opacity: 0.8;
     cursor: pointer;
@@ -83,11 +88,15 @@ img:hover{
     margin-top: 25px;
 }
 
-.contenedorMasImagenes img{
-    width: 32%;
+.contenedorMasImagenes a {
+    display: block; /* Asegura que el enlace ocupe todo el tamaño de la imagen */
+    width: calc(33.33% - 5px); /* 3 imágenes por fila, considerando el gap */
+}
+
+.contenedorMasImagenes img {
+    width: 100%; /* Se ajusta al tamaño del contenedor del enlace */
     height: 150px;
     object-fit: cover;
-
 }
 
 .botones{

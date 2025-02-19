@@ -10,35 +10,7 @@ const contenedorDestacados = document.querySelector(".destacadosMosaicos")
 
 
 
-flechaDerechaDestacados.addEventListener("click",()=>{
 
-
-    const anchoContenedor = contenedorDestacados.offsetWidth; 
-
-contenedorDestacados.scrollBy({
-
-
-    left:anchoContenedor,
-    behavior:"smooth",
-})
-
-
-})
-
-
-flechaIzquierdaDestacados.addEventListener("click",()=>{
-  
-    const anchoContenedor = contenedorDestacados.offsetWidth; 
-
-contenedorDestacados.scrollBy({
-
-
-    left: -anchoContenedor,
-    behavior:"smooth",
-})
-
-
-})
 
 
 let moverIzquierda = true;

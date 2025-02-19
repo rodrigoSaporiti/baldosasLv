@@ -74,51 +74,19 @@ function traerDataLisas(data) {
  textSKU.forEach(element => { element.textContent = `${mosaico.titulo}`;
  });
 
-  contenedorImagenPrincipal.src = `escalones/${mosaico.img}`
 
 
+  let classCImagenP = document.querySelector(".contenedorImagenPrincipal")
 
+
+  classCImagenP.innerHTML=`
   
-  const contenedorPrincipal = document.getElementById("contenedorPrincipal");
-  const todasLasImagenes = contenedorPrincipal.querySelectorAll("img");
-  console.log(todasLasImagenes)
+   <a href="escalones/${mosaico.img}" id="enlaceImagen" data-fancybox="gallery" class="m-0 p-0">
+    <img id="contenedorImagenPrincipal" src="escalones/${mosaico.img}" alt="">
+  </a>
   
-  
-  
-  todasLasImagenes.forEach(element => {
-      
-     element.addEventListener("click",(e)=>{
-  
-     let srcCompleto = e.target.src;
-   
-  
-     console.log(srcCompleto)
-     imagenGrande.src = `${srcCompleto}`
-     imagenEnGrande.classList.toggle("d-none")
-     
-     })
-  
-     
-  
-  
-  });
-  
-  
-  const imagenGrande = document.getElementById("imagenGrande");
-  const imagenEnGrande = document.getElementById("imagenEnGrande");
-  
-  
-  // cierre del close 
-  
-  const closeImagenGrande = document.getElementById("closeImagenGrande");
-  
-  closeImagenGrande.addEventListener("click",()=>{
-  
-      imagenEnGrande.classList.toggle("d-none")
-  
-  
-  })
-  
+  `
+ 
 
 }
 

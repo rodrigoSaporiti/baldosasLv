@@ -41,25 +41,27 @@ function traerDataLisas(data) {
       element.textContent = `${mosaico.titulo}`;
   });
 
-  // Actualizar la imagen principal (de vista previa)
-  const contenedorImagenPrincipal = document.getElementById('contenedorImagenPrincipal');
-  contenedorImagenPrincipal.src = `lisasBaldosas/${mosaico.img}`;
+  const contenedorImagenPrincipal = document.querySelector(".contenedorImagenPrincipal");
 
-  // Actualizar la imagen para el enlace Fancybox (imagen grande)
-  const enlaceImagen = document.getElementById('enlaceImagen');
-  enlaceImagen.href = `lisasBaldosas/${mosaico.img}`; // Ruta a la imagen grande
+  contenedorImagenPrincipal.innerHTML = `
 
-  // Si tienes un enlace para el tamaño, también lo puedes hacer con el siguiente código
+   <a href="lisasBaldosas/${mosaico.img}" id="enlaceImagen" data-fancybox="gallery" class="m-0 p-0">
+    <img id="contenedorImagenPrincipal" src="lisasBaldosas/${mosaico.img}" alt="Baldosa calcarea lisa color ${mosaico.titulo}">
+  </a>
+
+  
+  `
+
+  const enlaceTamanosLisas = document.getElementById("enlaceTamanosLisas");
+
+  enlaceTamanosLisas.href = `tamanosLisas/${mosaico.id}.png`;
+
   const tamanoLisas = document.getElementById('tamanoLisas'); 
   tamanoLisas.src = `tamanosLisas/${mosaico.id}.png`;
 
-  // Asegurarse de que Fancybox funcione correctamente
-  Fancybox.bind("[data-fancybox]", {
-      // Aquí puedes incluir opciones personalizadas si las necesitas
-  });
+
+
 }
-
-
 
 
 

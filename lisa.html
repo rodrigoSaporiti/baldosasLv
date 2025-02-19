@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="galeria.css">
   <link rel="icon" href="img/Lvgoogle.png" type="image/x-icon">
 
-      <!-- Fancybox CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/u
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,45 +30,7 @@
 
 
 
-  <div id="imagenEnGrande" class="imagenEnGrande d-none">
 
-    <div id="closeImagenGrande" class=" closeImagenGrande">
-
-      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
-        <path
-          d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
-      </svg>
-
-      <p class="ms-1 text-white">CLOSE</p>
-
-    </div>
-
-
-    <svg id="flechaIzquierda" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-compact-left"
-      viewBox="0 0 16 16">
-      <path fill-rule="evenodd"
-        d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223" />
-    </svg>
-
-
-    <div class="contenedorImagen">
-
-      <img id="imagenGrande" src="img/GALERIA/baños/276969618_128941326373797_5985634521429029911_n (2)-min.jpg" alt=""
-        class="zoomed-image">
-
-
-    </div>
-
-
-    <svg id="flechaDerecha" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-compact-right"
-      viewBox="0 0 16 16">
-      <path fill-rule="evenodd"
-        d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671" />
-    </svg>
-
-
-  </div>
 
 
   <div class="botonesArribaWsp">
@@ -281,11 +243,10 @@
 
 
    
+    <div class="contenedorImagenes">
 <div class="contenedorImagenPrincipal">
-  <!-- Enlace que rodea la imagen para que Fancybox funcione -->
-  <a href="" id="enlaceImagen" data-fancybox="gallery">
-    <img id="contenedorImagenPrincipal" src="" alt="Imagen principal">
-  </a>
+ 
+ 
 </div>
 
 
@@ -320,6 +281,7 @@
 
     </div>
 
+  </div>
 
     <div class="contenedorInfo">
 
@@ -327,8 +289,12 @@
 
       <p>* Nuestro proceso de fabricación se adapta a la demanda y la cola de pedidos, consulte stock.</p>
       <p class="fw-bold">Varios tamaños</p>
-      <img id="tamanoLisas" src="" alt="">
 
+      <a id="enlaceTamanosLisas" href="" data-fancybox="gallery">
+
+      <img id="tamanoLisas" src="" alt="">
+      
+    </a>
     </div>
 
 

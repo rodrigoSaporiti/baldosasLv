@@ -37,51 +37,18 @@ function traerDataLisas(data) {
  textSKU.forEach(element => { element.textContent = `${mosaico.titulo}`;
  });
 
-  contenedorImagenPrincipal.src = `piedra/${mosaico.img}`
+  
+ let classCImagenP = document.querySelector(".contenedorImagenPrincipal")
 
 
+ classCImagenP.innerHTML=`
+ 
+  <a href="piedra/${mosaico.img}" id="enlaceImagen" data-fancybox="gallery" class="m-0 p-0">
+   <img id="contenedorImagenPrincipal" src="piedra/${mosaico.img}" alt="">
+ </a>
+ 
+ `
 
-  
-  const contenedorPrincipal = document.getElementById("contenedorPrincipal");
-  const todasLasImagenes = contenedorPrincipal.querySelectorAll("img");
-  console.log(todasLasImagenes)
-  
-  
-  
-  todasLasImagenes.forEach(element => {
-      
-     element.addEventListener("click",(e)=>{
-  
-     let srcCompleto = e.target.src;
-   
-  
-     console.log(srcCompleto)
-     imagenGrande.src = `${srcCompleto}`
-     imagenEnGrande.classList.toggle("d-none")
-     
-     })
-  
-     
-  
-  
-  });
-  
-  
-  const imagenGrande = document.getElementById("imagenGrande");
-  const imagenEnGrande = document.getElementById("imagenEnGrande");
-  
-  
-  // cierre del close 
-  
-  const closeImagenGrande = document.getElementById("closeImagenGrande");
-  
-  closeImagenGrande.addEventListener("click",()=>{
-  
-      imagenEnGrande.classList.toggle("d-none")
-  
-  
-  })
-  
 
 }
 

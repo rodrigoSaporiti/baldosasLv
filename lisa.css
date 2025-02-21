@@ -107,7 +107,11 @@ img:hover{
     margin: 10px;
 }
 
-
+.coloresBachas{
+    width: 100px !important;
+    height: 70px !important;
+    border-radius: 5px;
+}
 
 @media (max-width: 575px){
 

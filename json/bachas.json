@@ -1,0 +1,5 @@
+[
+    {"img":"redonda.jpg" , "tamaño":"39x39x12","titulo":"Redonda", "id" :"1"},
+    {"img":"cuadrada.jpg" , "tamaño":"39x39x12","titulo":"Cuadrada", "id" :"2"},
+    {"img":"ovalada.jpg" , "tamaño":"50x34x10,5","titulo":"Ovalada", "id" :"3"}
+]

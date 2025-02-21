@@ -7,13 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Baldosas LV</title>
   <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="galeria.css">
+
   <link rel="stylesheet" href="productos.css">
   <link rel="icon" href="img/Lvgoogle.png" type="image/x-icon">
-
-  <!-- Fancybox CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
-
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,50 +22,6 @@
 </head>
 
 <body class="poppins-thin">
-
-
-
-
-
-  <div id="imagenEnGrande" class="imagenEnGrande d-none">
-
-    <div id="closeImagenGrande" class=" closeImagenGrande">
-
-      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
-        <path
-          d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
-      </svg>
-
-      <p class="ms-1 text-white">CLOSE</p>
-
-    </div>
-
-
-    <svg id="flechaIzquierda" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-compact-left"
-      viewBox="0 0 16 16">
-      <path fill-rule="evenodd"
-        d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223" />
-    </svg>
-
-
-    <div class="contenedorImagen">
-
-      <img id="imagenGrande" src="img/GALERIA/baños/276969618_128941326373797_5985634521429029911_n (2)-min.jpg" alt=""
-        class="zoomed-image">
-
-
-    </div>
-
-
-    <svg id="flechaDerecha" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-compact-right"
-      viewBox="0 0 16 16">
-      <path fill-rule="evenodd"
-        d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671" />
-    </svg>
-
-
-  </div>
 
 
 
@@ -105,6 +57,7 @@
   <nav>
 
     <div id="pantallaNegra" class="pantallaNegra d-none"></div>
+    <div id="pantallaNegraProductos" class="pantallaNegra d-none"></div>
     <div id="pantallaNegraProductos" class="pantallaNegra d-none"></div>
 
 
@@ -247,12 +200,16 @@
   </nav>
 
 
+
   <div class="contentWhiteResponsive">
 
   </div>
 
 
+
   <div class="paginacionHome">
+
+
 
     <div class="contenidoHome">
       <a class="text-black" href="index.html">
@@ -263,18 +220,15 @@
         </svg>
       </a>
       <p> &nbsp; / </p>
-      <p>&nbsp; GALERIA POR SECCIÓN</p>
+      <p>&nbsp; PRODUCTOS</p>
       <p> &nbsp;/ </p>
-      <p class="text-uppercase fw-bold "> &nbsp; <span id="pagHome" class="d-none"></span>DAMEROS</p>
+      <p class="text-uppercase fw-bold "> &nbsp; con relieve</p>
 
     </div>
 
   </div>
 
-
-  <main class="contenedorPadre">
-
-
+  <main class="contenedorPrincipal">
 
 
     <aside class="contenedorFiltrosPadre">
@@ -283,7 +237,7 @@
 
 
 
-      <div class="filtroResponsive d-md-none">
+      <div class="filtroResponsive d-lg-none">
 
         <button id="btnFiltroResponsive" class="btn-dark btn d-flex justify-content-center  align-items-center">
           filter
@@ -300,9 +254,9 @@
       </div>
 
 
-      <div class="contenedorFiltros d-none d-md-flex">
+      <div class="contenedorFiltros d-none d-lg-flex">
 
-        <div id="closeMenuMobileFilter" class="d-md-none closeMenuMobile">
+        <div id="closeMenuMobileFilter" class="d-lg-none closeMenuMobile">
 
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle"
             viewBox="0 0 16 16">
@@ -316,24 +270,32 @@
         </div>
 
 
-        <input type="radio" name="galerias" value="banos" id="banos">
-        <label for="banos">Baños</label>
+        <input type="radio" name="talla" value="relieve" id="relieve">
+        <label for="relieve">Con relieve</label>
 
-        <input type="radio" name="galerias" value="cocinas" id="cocinas">
-        <label for="cocinas">Cocinas</label>
+        <input type="radio" name="talla" value="lisas" id="lisas">
+        <label for="lisas">Lisas</label>
 
-        <input type="radio" name="galerias" value="dameros" id="dameros">
-        <label for="dameros">Dameros</label>
+        <input type="radio" name="talla" value="mosaicos" id="mosaicos">
+        <label for="mosaicos">Mosaicos</label>
 
-        <input type="radio" name="galerias" value="locales" id="locales">
-        <label for="locales">Locales</label>
+        <input type="radio" name="talla" value="piscina" id="piscina">
+        <label for="piscina">Piscina</label>
 
-        <input type="radio" name="galerias" value="exteriores" id="exteriores">
-        <label for="exteriores">Exteriores</label>
+        <input type="radio" name="talla" value="piedra" id="piedra">
+        <label for="piedra">Piedra</label>
 
-        <input type="radio" name="galerias" value="interiores" id="interiores">
-        <label for="interiores">Interiores</label>
+        <input type="radio" name="talla" value="escalones" id="escalones">
+        <label for="escalones">Escalones y zócalos </label>
 
+        <input type="radio" name="talla" value="vereda" id="vereda">
+        <label for="vereda">Vereda</label>
+
+        <input type="radio" name="talla" value="bachas" id="bachas">
+        <label for="bachas">Bachas</label>
+
+        <input type="radio" name="talla" value="selladores_limpiadores" id="selladores_limpiadores">
+        <label for="selladores_limpiadores">Selladores/Limpiadores</label>
 
 
 
@@ -349,15 +311,30 @@
 
 
 
+    <section class="contenedorCards">
 
 
-    <div id="cardImg" class="contenedorCardsGaleria">
 
 
 
-    </div>
+
+
+
+
+
+
+
+    </section>
+
+
 
   </main>
+
+
+
+
+
+
 
 
 
@@ -504,19 +481,14 @@
 
   </div>
 
-
-
-
-  <script src="js/index2.js"></script>
+  <script src="js/filtros.js"></script>
   <script src="js/nav.js"></script>
-  <script src="js/galeria.js"></script>
+  <script src="js/filtro.js"></script>
+  <script src="js/bachas.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-
-    <!-- Fancybox JS -->
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-
 </body>
 
 </html>

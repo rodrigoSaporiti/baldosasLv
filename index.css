@@ -416,6 +416,9 @@ html {
 
 
 
+ 
+
+
 
 
  .destacados1{
@@ -654,10 +657,43 @@ html {
   object-fit: contain;
 }
 
+.botonDiseno{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 30px;
+  background-color: #25d366;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  transition: transform 0.3s ease; /* Agrega una animación suave */
+}
+
+
+.botonDiseno:hover{
+  transform: scale(1.1);
+}
+
  /* Extra pequeño (móviles pequeños, hasta 374px) */
 @media (max-width: 575px) {
   /* Estilos */
 
+  .botonDiseno{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 12px;
+    background-color: #25d366;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+    transition: transform 0.3s ease; /* Agrega una animación suave */
+    font-size: 10px;
+
+  }
+  
  
 
 
@@ -1164,6 +1200,26 @@ display: none;
 /* Pequeño (tabletas, en orientación vertical) */
 @media (min-width: 576px) and (max-width: 991px) {
   /* Estilos */
+
+
+  
+  .botonDiseno{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 13px;
+    margin-left: 25px;
+    background-color: #25d366;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    transition: transform 0.3s ease; /* Agrega una animación suave */
+    font-size: 10px;
+
+  }
+
+  
 
   .acordeonResponsive li a{
 
@@ -1799,3 +1855,20 @@ justify-content: space-evenly;
 
 }
 
+
+
+/* Para dispositivos en modo vertical (portrait) */
+@media (orientation: portrait) {
+  body {
+    background-color: black; /* Puedes personalizar el estilo */
+  }
+  /* Aquí puedes agregar más estilos específicos para modo vertical */
+}
+
+/* Para dispositivos en modo horizontal (landscape) */
+@media (orientation: landscape) {
+  body {
+    background-color: black; /* Puedes personalizar el estilo */
+  }
+  /* Aquí puedes agregar más estilos específicos para modo horizontal */
+}

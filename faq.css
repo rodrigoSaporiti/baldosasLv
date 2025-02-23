@@ -4,42 +4,45 @@ main{
   margin-top: 25px;
 }
 
-
-.accordion {
+.accordion-custom {
   --bs-accordion-active-bg: #ffffff !important;
   --bs-accordion-active-color: #000000 !important;
   --bs-accordion-btn-focus-box-shadow: none !important;
 }
 
-.accordion-button.collapsed {
+.accordion-custom .accordion-button.collapsed {
   border: 1px solid #d8d8d8 !important;
 }
 
-.accordion .accordion-item:has(.accordion-button:not(.collapsed)) {
+.accordion-custom .accordion-item:has(.accordion-button:not(.collapsed)) {
   border: 2px solid #000000 !important;
   box-shadow: 5px 5px #000000 !important;
 }
 
-
-.accordion-button:not(.collapsed) {
+.accordion-custom .accordion-button:not(.collapsed) {
   box-shadow: none !important;
 }
 
-
-.accordion-collapse {
+.accordion-custom .accordion-collapse {
   transition: all 0.3s !important;
 }
 
-
-.accordion-button::after{
+.accordion-custom .accordion-button::after {
   content: "+" !important;
   background-image: none !important;
 }
 
-.accordion-button:not(.collapsed)::after{
+.accordion-custom .accordion-button:not(.collapsed)::after {
   content: "-" !important;
   background-image: none !important;
 }
+
+@media (max-width: 575px) {
+  main {
+    width: 90%;
+  }
+}
+
 
 
 @media (max-width: 575px){

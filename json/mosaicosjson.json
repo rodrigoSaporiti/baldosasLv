@@ -593,8 +593,8 @@
     "id": "147",
     "titulo": "BALDOSA MOSAICO CALCAREA",
     "img": "60-min.png",
-    "tamaño": "20x20",
-    "metro": "25 Baldosas",
+    "tamaño": "20x20 o 30x30",
+    "metro": "25 Baldosas 20x20 o 11 Baldosas 30x30",
     "peso": "1.5kg c/u",
     "esnuevo": "0",
     "sku": "060"
@@ -1168,5 +1168,35 @@
     "peso": "1.5kg c/u",
     "esnuevo": "1",
     "sku": "117"
+  },
+  {
+    "id": "235",
+    "titulo": "BALDOSA MOSAICO CALCAREA",
+    "img": "118.jpg",
+    "tamaño": "20x20",
+    "metro": "25 Baldosas",
+    "peso": "1.5kg c/u",
+    "esnuevo": "1",
+    "sku": "118"
+  },
+  {
+    "id": "236",
+    "titulo": "BALDOSA MOSAICO CALCAREA",
+    "img": "119.jpg",
+    "tamaño": "20x20",
+    "metro": "25 Baldosas",
+    "peso": "1.5kg c/u",
+    "esnuevo": "1",
+    "sku": "119"
+  },
+  {
+    "id": "237",
+    "titulo": "BALDOSA MOSAICO CALCAREA",
+    "img": "120.jpg",
+    "tamaño": "30x30",
+    "metro": "11 Baldosas",
+    "peso": "1.5kg c/u",
+    "esnuevo": "1",
+    "sku": "120"
   }
 ]

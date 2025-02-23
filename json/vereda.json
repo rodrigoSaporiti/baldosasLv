@@ -1,5 +1,6 @@
 [
     {"img":"panesgris.jpg" , "tamaño":"20x20","titulo":"Panes gris", "id" :"1"},
+    {"img":"barraGris.jpg" , "tamaño":"20x20","titulo":"Barra gris", "id" :"10"},
     {"img":"panesAmarillo.jpg" , "tamaño":"20x20","titulo":"Panes amarillo", "id" :"2"},
     {"img":"panesRojo.jpg" , "tamaño":"20x20","titulo":"Panes rojo", "id" :"3"},
     {"img":"barraamarilla.png" , "tamaño":"20x20","titulo":"Barra amarilla", "id" :"4"},

@@ -283,7 +283,7 @@ img:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 0px;
+    margin-top: 50px;
     gap: 0px;
     
 }
@@ -324,5 +324,57 @@ img:hover{
 
 
 @media (min-width: 576px) and (max-width: 991px) {
+
+
+
+    .contenedorPrincipal{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .contenedorImagenes{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .contenedorGaleria{
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+    
+    .contenedorInfo{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        border-left: 2px solid rgb(223, 222, 222);
+       
+        border-right: 2px solid rgb(223, 222, 222);
+    }
+
+    .contenedorInteresantes{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        gap: 0px;
+        
+    }
+    
+
+
 
 }

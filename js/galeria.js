@@ -23,8 +23,6 @@ fetch(`json/${seccion}.json`)
      banos = data
    mostrarImagenes(data);
 
-   flechaDer(data);
-   flechaIzq(data);
   
 
   })

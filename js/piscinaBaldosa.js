@@ -44,7 +44,7 @@ function traerDataLisas(data) {
   classCImagenP.innerHTML=`
   
    <a href="piscina/${mosaico.img}" id="enlaceImagen" data-fancybox="gallery" class="m-0 p-0">
-    <img id="contenedorImagenPrincipal" src="piscina/${mosaico.img}" alt="">
+    <img id="contenedorImagenPrincipal" src="piscina/${mosaico.img}" alt="Baldosa de piscina">
   </a>
   
   `

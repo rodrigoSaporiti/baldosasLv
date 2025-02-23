@@ -368,9 +368,23 @@ html {
   margin-right: 25px;
 }
 
+.cardDestacadoPrincipal{
+  width:300px ;
+  transition: transform 0.5s ease; /* Usamos transición para suavizar */
+}
+
+.cardDestacadoPrincipal img{
+  width: 100%;
+}
+
 .cardDestacados:hover {
   transform: scale(1.06); /* Ampliar con hover */
 }
+
+.cardDestacadoPrincipal:hover {
+  transform: scale(1.07); /* Ampliar con hover */
+}
+
 
  .cardDestacados img{
   width: 100%;
@@ -394,25 +408,21 @@ html {
   margin: 0 auto;
   margin-top: 25px;
   display: flex;
-  overflow: hidden;
-  overflow-x: auto;
-  height: 310px;
+  justify-content: center;
+  align-items: center;
+  height: auto;
   transition: transform 4s ease-in-out;
  }
 
- .destacadosMosaicos::-webkit-scrollbar {
-  display: none; /* Oculta la barra de desplazamiento */
-}
 
- .contenedorMosaicosDestacados{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
- }
+
+
 
  .destacados1{
   display: flex;
   flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
   
  }
 
@@ -444,10 +454,14 @@ html {
 
 }
 
+.contenedorFooter{
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .lineaFooter{
   border-top: 2px solid  #bfbbbb ;
-  margin-top: 100px;
+  margin-top: 180px;
  }
 
 .footerEmpresa{
@@ -455,13 +469,23 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 50%;
+}
+
+
+.unit img{
+  width: 150px;
+}
+
+.unit:hover{
+  opacity: 0.5;
 }
 
 .redesSociales{
   display: flex;
   justify-content: space-evenly;
   width: 15%;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .redesSociales svg{
@@ -478,11 +502,13 @@ html {
 
 
 .footerPaginas{
-  width: 80%;
+  width: 50%;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 10px;
  }
 
 
@@ -513,39 +539,9 @@ html {
   justify-content: space-between;
  }
 
- .proyectos{
-  width: 49%;
-  position: relative;
-  
- }
-
- .proyectos img{
-
-  width: 100%;
-  position: relative;
-
- }
-
- .proyectos div{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.175);
-  border: 1px solid black;
- }
-
-
- .proyectos p{
-  font-size: 30px;
- }
 
  .preguntas{
-  width: 49%;
+  width: 100%;
   background-color: black;
   position: relative;
   overflow: hidden;
@@ -596,6 +592,7 @@ html {
 
 
  .closeMenuMobile{
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -643,10 +640,25 @@ html {
 }
 
 
+.designPisos{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0px;
+  height: auto;
+  
+}
+
+.designPisos img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 
  /* Extra pequeño (móviles pequeños, hasta 374px) */
 @media (max-width: 575px) {
   /* Estilos */
+
+ 
 
 
   .carousel-indicators button {
@@ -833,41 +845,45 @@ html {
       .destacadosMosaicos{
         width: 90%;
         margin: 0 auto;
-        margin-top: 15px;
-        height: auto;
-        overflow-x: auto;
-       }
-
-       .cardDestacados {
-        width: 50px;
-        cursor: pointer;
-        transition: transform 0.5s ease; /* Usamos transición para suavizar */
-       margin: 5px;
-        flex: 1 0 30%;
-      }
-
-      .destacados1{
+        margin-top: 25px;
         display: flex;
-        flex-wrap: wrap;
-        min-width: 450px; /* Ancho fijo para cada tarjeta */
-        height: 500px; /* Alto de las tarjetas */
-        margin-right: 10px; /* Espaciado entre tarjetas */
-        flex-shrink: 0; /* Evita que las tarjetas se encojan */
-       
-        
+
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        transition: transform 4s ease-in-out;
        }
       
-       .destacados2{
-        display: flex;
-        flex-wrap: wrap;
-        min-width: 450px; /* Ancho fijo para cada tarjeta */
-        height: 500px; /* Alto de las tarjetas */
-        margin-right: 10px; /* Espaciado entre tarjetas */
-        flex-shrink: 0; /* Evita que las tarjetas se encojan */
-        font-size: 20px;
-        
-       }
+      
+      
 
+      
+ .cardDestacados {
+  flex-basis: calc(50% - 8px); /* Ajusta el ancho considerando el gap */
+  cursor: pointer;
+  transition: transform 0.5s ease; /* Usamos transición para suavizar */
+  margin-left: 4px ;
+  margin-right: 4px;
+}
+
+.cardDestacados img{
+  aspect-ratio: 1/1;
+}
+
+.cardDestacadoPrincipal{
+  width:280px ;
+  transition: transform 0.5s ease; /* Usamos transición para suavizar */
+}
+
+      .destacados1{
+       flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+      justify-content: space-evenly;
+        align-items: center;
+       }
+      
+      
        .contenedorPdestacados{
         display: flex;
         justify-content: space-evenly;
@@ -878,7 +894,7 @@ html {
        }
       
        .contenedorPdestacados p {
-        font-size: 8px;
+        font-size: 14px;
        }
 
        
@@ -1008,45 +1024,13 @@ html {
   width: 0;
  }
 
- .proyectos{
-  min-width: 250px; /* Ancho fijo para cada tarjeta */
-  height: 300px; /* Alto de las tarjetas */
-  margin-right: 10px; /* Espaciado entre tarjetas */
-  flex-shrink: 0; /* Evita que las tarjetas se encojan */
-  font-size: 20px;
- 
- }
- 
- .proyectos img{
 
-  width: 100%;
-  height: 100%;
-  position: relative;
-  object-fit: cover;
-
- }
-
- .proyectos p{
-  font-size: 20px;
- }
-
-
- .proyectos img{
-
-  width: 100%;
-  position: relative;
-
- }
  .preguntas p{
   font-size: 20px;
  }
 
  .preguntas{
-  min-width: 250px; /* Ancho fijo para cada tarjeta */
-  height: 300px; /* Alto de las tarjetas */
-  margin-right: 10px; /* Espaciado entre tarjetas */
-  flex-shrink: 0; /* Evita que las tarjetas se encojan */
-  font-size: 20px;
+ width: 100%;
  
  }
 
@@ -1077,10 +1061,15 @@ display: none;
  }
 
 .footerEmpresa{
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.unit{
+  margin: 0 auto;
 }
 
 .footerEmpresa img{
@@ -1098,7 +1087,12 @@ display: none;
   cursor: pointer;
   
 }
-
+.contenedorFooter{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+}
 
 
 .footerPaginas{
@@ -1107,7 +1101,7 @@ display: none;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 25px;
+  margin-top: 0px;
  }
  .footerPaginas p{
   font-size: 12px;
@@ -1266,7 +1260,7 @@ display: none;
 
   .linksNav button{
     font-size: 25px;
-    margin: 5px;
+    margin: 0px;
   }
 
   .divNav svg{
@@ -1360,39 +1354,9 @@ display: none;
     justify-content: space-between;
    }
   
-   .proyectos{
-    width: 49%;
-    position: relative;
-    
-   }
-  
-   .proyectos img{
-  
-    width: 100%;
-    position: relative;
-  
-   }
-  
-   .proyectos div{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.175);
-    border: 1px solid black;
-   }
-  
-  
-   .proyectos p{
-    font-size: 20px;
-   }
   
    .preguntas{
-    width: 49%;
+    width: 100%;
     background-color: black;
     position: relative;
     overflow: hidden;
@@ -1484,6 +1448,7 @@ display: none;
  }
 
 .footerEmpresa{
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1503,15 +1468,24 @@ display: none;
   
 }
 
+.unit{
+  margin: 0 auto;
+}
 
+.contenedorFooter{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 25px;
+}
 
 .footerPaginas{
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 25px;
+  margin-top: 0px;
  }
  .footerPaginas p{
   font-size: 15px;
@@ -1546,8 +1520,46 @@ display: none;
   
  }
  
+ .destacadosMosaicos{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  transition: transform 4s ease-in-out;
+ }
 
 
+
+
+
+.cardDestacados {
+flex-basis: calc(50% - 8px); /* Ajusta el ancho considerando el gap */
+cursor: pointer;
+transition: transform 0.5s ease; /* Usamos transición para suavizar */
+margin-left: 4px ;
+margin-right: 4px;
+}
+
+.destacados1{
+ flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+justify-content: space-evenly;
+  align-items: center;
+ }
+
+ .cardDestacados img{
+  aspect-ratio: 1/1;
+}
+
+.cardDestacadoPrincipal{
+  width:500px ;
+  transition: transform 0.5s ease; /* Usamos transición para suavizar */
+}
 
 }
 
@@ -1710,36 +1722,6 @@ display: none;
     justify-content: space-between;
    }
   
-   .proyectos{
-    width: 49%;
-    position: relative;
-    
-   }
-  
-   .proyectos img{
-  
-    width: 100%;
-    position: relative;
-  
-   }
-  
-   .proyectos div{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.175);
-    border: 1px solid black;
-   }
-  
-  
-   .proyectos p{
-    font-size: 20px;
-   }
   
    .preguntas{
     width: 49%;

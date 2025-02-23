@@ -1,15 +1,13 @@
 .contenedorPrincipal{
     width: 80%;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 60px;
     display: flex;
     gap: 1%;
-    align-items: center;
-    justify-content: center;
 }
 
 .contenedorImagenes{
-    width: 45%;
+    width: 33%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,13 +30,15 @@
 
 
 .contenedorInfo{
-    width: 50%;
+    width: 45%;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
     text-align: center;
     border-left: 2px solid rgb(223, 222, 222);
+   
+    border-right: 2px solid rgb(223, 222, 222);
 }
 
 .contenedorInfo img{
@@ -67,7 +67,7 @@ img:hover{
 }
 
 .contenedorGaleria{
-    width: 0%;
+    width: 33%;
 }
 
 .contenedorGaleria img{
@@ -112,10 +112,50 @@ img:hover{
 .coloresBachas{
     width: 100px !important;
     height: 70px !important;
-    border-radius: 5px;
+    border-radius: 5px !important;
 }
 
+
+.contenedorInteresantes{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    gap: 250px;
+    
+}
+
+.masSelladores{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 25px;
+}
+.cardInteresantes{
+    width: 160px;
+}
+
+.cardInteresantes img{
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    object-fit: contain;
+}
+
+.masBaldosas{
+    width: 100%;
+    display: flex;
+    gap: 25px;
+}
+  
+
+  
+
 @media (max-width: 575px){
+
+
 
     .contenedorPrincipal{
         width: 90%;
@@ -174,7 +214,8 @@ img:hover{
     align-items: center;
     flex-direction: column;
     text-align: center;
-    border-left: 0px solid rgb(223, 222, 222);
+    border-left: none; 
+    border-right: none;
 }
 
 .contenedorInfo img{
@@ -224,11 +265,59 @@ img:hover{
 }
 
 .contenedorMasImagenes img{
-    width: 32%;
+    width: 100%;
     height: 150px;
     object-fit: cover;
 
 }
+
+.contenedorMasImagenes a {
+    display: block; /* Asegura que el enlace ocupe todo el tamaño de la imagen */
+    width: calc(33.33% - 5px); /* 3 imágenes por fila, considerando el gap */
+}
+
+.contenedorInteresantes{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    gap: 0px;
+    
+}
+
+.masSelladores{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 25px;
+}
+.cardInteresantes{
+    width: 100px;
+}
+
+.cardInteresantes img{
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    object-fit: contain;
+}
+
+.masBaldosas{
+    width: 100%;
+    display: flex;
+    gap: 25px;
+}
+  
+
+.coloresBachas{
+    width: 75px !important;
+    height: 60px !important;
+    border-radius: 15px !important;
+}
+
 
 
 }

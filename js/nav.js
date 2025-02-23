@@ -35,19 +35,6 @@ const closeMenuMobile = document.getElementById("closeMenuMobile")
   })
 
   
-  closeMenuMobile.addEventListener("click", (e)=>{
-   
-    linksNavjs.classList.add("quitar")
-   
-    pantallaNegra.classList.toggle("d-none")
-
-      // Este código muestra un mensaje después de 3 segundos
-      setTimeout(() => {
-        linksNavjs.classList.toggle("d-none")
-      }, 200);  // 3000ms = 3 segundos
-      
-      
-  })
 
 
  

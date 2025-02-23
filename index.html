@@ -51,7 +51,22 @@
 
     <nav>
 
-        <div id="pantallaNegra" class="pantallaNegra d-none"></div>
+        <div id="pantallaNegra" class="pantallaNegra d-none">
+
+            <div id="closeMenuMobile" class="d-lg-none closeMenuMobile">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-x-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                    <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                </svg>
+
+                <p class="ms-1 m-0">CLOSE</p>
+
+            </div>
+
+        </div>
         <div id="pantallaNegraProductos" class="pantallaNegra d-none"></div>
 
 
@@ -69,7 +84,7 @@
                     d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
             </svg>
             <a class="m-0 p-0 text-black d-flex text-decoration-none align-items-center" href="index.html">
-                <img class="logoNav" src="img/logo.png" alt="">
+                <img class="logoNav" src="img/logo.png" alt="Baldosa lv Calcareas Uruguay">
                 <h1 class="titulo dm-serif-display-regular">BALDOSAS LV</h1>
             </a>
         </div>
@@ -79,18 +94,6 @@
         <div id="linksNav" class="linksNav d-none  d-lg-flex">
 
 
-            <div id="closeMenuMobile" class="d-lg-none closeMenuMobile">
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-x-circle" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
-                    <path
-                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
-                </svg>
-
-                <p class="ms-1">CLOSE</p>
-
-            </div>
 
 
             <a href="index.html" class="border-bottom border-3 border-black ">INICIO</a>
@@ -110,6 +113,8 @@
                     <li><a class="dropdown-item" href="piscina.html">Piscina</a></li>
                     <li><a class="dropdown-item" href="escalones.html">Escalones y zócalos</a></li>
                     <li><a class="dropdown-item" href="vereda.html">Vereda</a></li>
+                    <li><a class="dropdown-item" href="bachas.html">Bachas</a></li>
+                    <li><a class="dropdown-item" href="selladores_limpiadores.html">Selladores</a></li>
                 </ul>
             </div>
 
@@ -117,25 +122,37 @@
             <div class="accordion d-lg-none" id="accordionProductos">
                 <div class="accordion-item border-0">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProductos" aria-controls="collapseProductos">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseProductos" aria-controls="collapseProductos">
                             PRODUCTOS
                         </button>
                     </h2>
-                    <div id="collapseProductos" class="accordion-collapse collapse" data-bs-parent="#accordionProductos">
+                    <div id="collapseProductos" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionProductos">
                         <div class="accordion-body p-0">
                             <ul class="list-unstyled acordeonResponsive">
-                                <li class="w-100 bg-light mb-2 mt-2"><a class="bg-light w-100" href="relieve.html">Con relieve</a></li>
-                                <li class="mb-2 mt-2"><a href="lisas.html">Lisas</a></li>
-                                <li class="w-100 bg-light mb-2 mt-2"><a class="bg-light" href="mosaicos.html">Mosaicos</a></li>
-                                <li class="mb-2 mt-2"><a href="piscina.html">Piscina</a></li>
-                                <li class="w-100 bg-light mb-2 mt-2"><a href="escalones.html">Escalones y zócalos</a></li>
-                                <li class="mb-2 mt-2"><a href="vereda.html">Vereda</a></li>
+                                <button class="w-100 btn btn-light p-2"><a href="relieve.html">Con relieve</a></button>
+                                <button class="w-100 bg-white btn btn-light p-2"><a class="bg-light"
+                                        href="lisas.html">Lisas</a></button>
+                                <button class="w-100 bg-light btn btn-light p-2"><a
+                                        href="mosaicos.html">Mosaicos</a></button>
+                                <button class="w-100 bg-white btn btn-light p-2"><a
+                                        href="piscina.html">Piscina</a></button>
+                                <button class="w-100 bg-light btn btn-light p-2"><a href="escalones.html">Escalones y
+                                        zócalos</a></button>
+                                <button class="w-100 bg-white btn btn-light p-2"><a
+                                        href="vereda.html">Vereda</a></button>
+                                <button class="w-100 bg-light btn btn-light p-2"><a
+                                        href="bachas.html">Bachas</a></button>
+                                <button class="w-100 bg-white btn btn-light p-2"><a
+                                        href="selladores_limpiadores.html">Selladores</a></button>
+
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
 
 
 
@@ -161,25 +178,32 @@
 
             <div class="accordion d-lg-none" id="accordionExample">
                 <div class="accordion-item border-0">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        GALERIA POR SECCIÓN
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
-                    <div class="accordion-body p-0">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            GALERIA POR SECCIÓN
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                        <div class="accordion-body p-0">
 
-                        <ul class="list-unstyled acordeonResponsive">
-                            <li class="w-100 bg-light mb-2 mt-2 " ><a class="bg-light w-100  " href="banos.html">Baños</a></li>
-                            <li class="mb-2 mt-2"><a class="" href="cocinas.html">Cocinas</a></li>
-                            <li class="w-100 bg-light mb-2 mt-2"><a class="bg-light" href="dameros.html">Dameros</a></li>
-                            <li class="mb-2 mt-2"><a class="" href="locales.html">Locales</a></li>
-                            <li class="w-100 bg-light mb-2 mt-2"><a class="" href="exteriores.html">Exteriores</a></li>
-                            <li class="mb-2 mt-2"><a class="" href="interiores.html">Interiores</a></li>
-                        </ul>
-                    
+                            <ul class="list-unstyled acordeonResponsive">
+                                <button class="w-100 bg-light btn btn-light p-2"><a href="banos.html">Baños</a></button>
+                                <button class="w-100 bg-white btn btn-light p-2"><a
+                                        href="cocinas.html">Cocinas</a></button>
+                                <button class="w-100 bg-light btn btn-light p-2"><a class=""
+                                        href="dameros.html">Dameros</a></button>
+                                <button class="w-100 bg-white btn btn-light p-2"><a
+                                        href="locales.html">Locales</a></button>
+                                <button class="w-100 bg-light btn btn-light p-2"><a
+                                        href="exteriores.html">Exteriores</a></button>
+                                <button class="w-100 bg-white btn btn-light p-2"><a
+                                        href="interiores.html">Interiores</a></button>
+
+                            </ul>
+
+                        </div>
                     </div>
-                  </div>
                 </div>
 
             </div>
@@ -210,50 +234,79 @@
             <div class="accordion d-lg-none" id="accordionColores">
                 <div class="accordion-item border-0">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseColores" aria-controls="collapseColores">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseColores" aria-controls="collapseColores">
                             GALERIA POR COLOR
                         </button>
                     </h2>
                     <div id="collapseColores" class="accordion-collapse collapse" data-bs-parent="#accordionColores">
                         <div class="accordion-body p-0">
                             <ul class="list-unstyled acordeonResponsive">
-                                <li class="w-100 bg-light mb-2 mt-2"><a class="bg-light w-100" href="amarillas.html">Amarillas</a></li>
-                                <li class="mb-2 mt-2"><a href="azules.html">Azules</a></li>
-                                <li class="w-100 bg-light mb-2 mt-2"><a class="bg-light" href="blancas.html">Blancas</a></li>
-                                <li class="mb-2 mt-2"><a href="cueros.html">Cueros</a></li>
-                                <li class="w-100 bg-light mb-2 mt-2"><a class="bg-light" href="grises.html">Grises</a></li>
-                                <li class="mb-2 mt-2"><a href="negras.html">Negras</a></li>
-                                <li class="w-100 bg-light mb-2 mt-2"><a class="bg-light" href="rojas.html">Rojas</a></li>
-                                <li class="mb-2 mt-2"><a href="verdes.html">Verdes</a></li>
+
+                                <button class="w-100 bg-light btn btn-light p-2"><a
+                                        href="amarillas.html">Amarillas</a></button>
+                                <button class="w-100 bg-white btn btn-light p-2"><a
+                                        href="azules.html">Azules</a></button>
+                                <button class="w-100 bg-light btn btn-light p-2"><a
+                                        href="blancas.html">Blancas</a></button>
+                                <button class="w-100 bg-white btn btn-light p-2"><a
+                                        href="cueros.html">Cueros</a></button>
+                                <button class="w-100 bg-light btn btn-light p-2"><a
+                                        href="grises.html">Grises</a></button>
+                                <button class="w-100 bg-white btn btn-light p-2"><a
+                                        href="negras.html">Negras</a></button>
+                                <button class="w-100 bg-light btn btn-light p-2"><a href="rojas.html">Rojas</a></button>
+                                <button class="w-100 bg-white btn btn-light p-2"><a
+                                        href="verdes.html">Verdes</a></button>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
 
 
 
             <p class="d-none d-lg-block">|</p>
 
-            <div class="dropdown">
+            <div class="dropdown d-none d-lg-block">
                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    CATALOGO
+                    CATÁLOGO
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="banos.html">Mosaicos</a></li>
-                    <li><a class="dropdown-item" href="cocinas.html">Lisas</a></li>
+                    <li><a class="dropdown-item" href="catalogoMosaicos.pdf">Mosaicos</a></li>
+                    <li><a class="dropdown-item" href="catalogoLisas.pdf">Lisas</a></li>
 
                 </ul>
             </div>
 
 
+            <div class="accordion d-lg-none" id="accordionExample">
+                <div class="accordion-item border-0">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapseOne">
+                            CATÁLOGO
+                        </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                        <div class="accordion-body p-0">
+
+                            <ul class="list-unstyled acordeonResponsive">
+                                <button class="w-100 bg-light btn btn-light p-2"><a class="w-100"
+                                        href="catalogoMosaicos.pdf">Mosaicos</a></button>
+                                <button class="w-100 bg-white btn btn-light p-2"><a
+                                        href="catalogoLisas.pdf">Lisas</a></button>
 
 
+                            </ul>
 
-            <p class="d-none d-lg-block">|</p>
+                        </div>
+                    </div>
+                </div>
 
-            <a href="proyectos.html">PROYECTOS</a>
+            </div>
+
 
             <p class="d-none d-lg-block">|</p>
 
@@ -297,25 +350,36 @@
 
                     <a href="mosaicos.html">
                         <img src="img/portada.jpg" class="d-block w-100"
-                            alt="Baldosas calcareas de mosaicos varios diseños y colores">
-                        <div class="contenedorTextoPortada">
-                            <p>MOSAICOS <BR> ¡NUEVOS DISEÑOS!</p>
+                            alt="Baldosas calcáreas de mosaicos varios diseños y colores, en Uruguay">
 
-                        </div>
                     </a>
 
                 </div>
                 <div class="carousel-item">
-                    <a href="piscina.html">
-                        <img src="img/portada2.jpg" class="d-block w-100" alt="Baldosa de piscina uruguay montevideo">
+                    <a class="d-md-block d-none" href="piscina.html">
+                        <img src="img/portada2.jpg" class="d-block w-100"
+                            alt="Baldosas de piscina Uruguay, Baldosas lv ">
                     </a>
+
+                    <a class="d-md-block d-md-none" href="piscina.html">
+                        <img src="img/portada2_2.jpg" class="d-block w-100"
+                            alt="Baldosas de piscina Uruguay, Baldosas lv ">
+                    </a>
+
+
                 </div>
                 <div class="carousel-item">
-                    <a href="lisas.html">
+                    <a class="d-md-block d-none" href="lisas.html">
                         <img src="img/portada3.jpg" class="d-block w-100"
-                            alt="Baldosas calcareas lisas varios tamaños y colores">
+                            alt="Baldosas calcáreas lisas varios tamaños y colores">
+                    </a>
+
+                    <a class="d-md-block d-md-none" href="lisas.html">
+                        <img src="img/portada3_2.jpg" class="d-block w-100"
+                            alt="Baldosas calcáreas lisas varios tamaños y colores">
                     </a>
                 </div>
+
             </div>
 
             <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -340,161 +404,113 @@
     </section>
 
 
+    <section class="designPisos">
+
+
+
+        <a href="https://wa.me/59892212234?text=Quiero%20tener%20más%20información%20sobre%20diseñar%20mi%20piso.%20Miren%20este%20link:%20https%3A%2F%2Fbaldosaslv.uy"
+            target="_blank">
+            <img class="d-none d-md-none d-lg-block" src="img/diseno_pisos.jpg" alt="Diseñamos tu piso en Baldosas lv">
+
+
+            <img class=" d-none d-md-block d-lg-none" src="img/diseno_pisos_2.jpg"
+                alt="Diseñamos tu piso en Baldosas lv">
+
+            <img class=" d-block d-md-none d-lg-none" src="img/diseno_pisos3.jpg"
+                alt="Diseñamos tu piso en Baldosas lv">
+
+        </a>
+
+
+
+
+
+
+    </section>
+
+
     <h2 class="text-center mb-md-0 mt-4 mb-0">DESTACADOS</h2>
 
 
-    <section class="destacadosMosaicos animar">
-
-
-
-        <div class="contenedorMosaicosDestacados animar">
-
-
-
-
-            <div class="destacados1" id="destacados1">
-
-                <div class="cardDestacados">
-
-                    <a class="text-decoration-none text-black" href="baldosa.html?id=002">
-                        <img src="img/destacado1.jpg" alt="">
-                        <div class="contenedorPdestacados">
-                            <p>SKU 002</p>
-                            <p>20X20</p>
-                        </div>
-                        <p class="w-100 text-center bg-dark text-white">Ver más..</p>
-                    </a>
-                </div>
-
-
-                <div class="cardDestacados">
-
-                    <a class="text-decoration-none text-black" href="baldosa.html?id=002">
-                        <img src="img/destacado1.jpg" alt="">
-                        <div class="contenedorPdestacados">
-                            <p>SKU 002</p>
-                            <p>20X20</p>
-                        </div>
-                        <p class="w-100 text-center bg-dark text-white">Ver más..</p>
-                    </a>
-                </div>
-
-
-
-
-                <div class="cardDestacados">
-
-                    <a class="text-decoration-none text-black" href="baldosa.html?id=002">
-                        <img src="img/destacado1.jpg" alt="">
-                        <div class="contenedorPdestacados">
-                            <p>SKU 002</p>
-                            <p>20X20</p>
-                        </div>
-                        <p class="w-100 text-center bg-dark text-white">Ver más..</p>
-                    </a>
-                </div>
-
-
-
-                <div class="cardDestacados">
-
-                    <a class="text-decoration-none text-black" href="baldosa.html?id=002">
-                        <img src="img/destacado1.jpg" alt="">
-                        <div class="contenedorPdestacados">
-                            <p>SKU 002</p>
-                            <p>20X20</p>
-                        </div>
-                        <p class="w-100 text-center bg-dark text-white">Ver más..</p>
-                    </a>
-                </div>
-
-
-                <div class="cardDestacados">
-
-                    <a class="text-decoration-none text-black" href="baldosa.html?id=002">
-                        <img src="img/destacado1.jpg" alt="">
-                        <div class="contenedorPdestacados">
-                            <p>SKU 002</p>
-                            <p>20X20</p>
-                        </div>
-                        <p class="w-100 text-center bg-dark text-white">Ver más..</p>
-                    </a>
-                </div>
+    <section class="destacadosMosaicos ">
 
 
 
 
 
 
-                <div class="destacados2" id="destacados2">
 
 
-                    <div class="cardDestacados">
+        <div class="destacados1" id="destacados1">
 
-                        <a class="text-decoration-none text-black" href="baldosa.html?id=002">
-                            <img src="img/destacado1.jpg" alt="">
-                            <div class="contenedorPdestacados">
-                                <p>SKU 002</p>
-                                <p>20X20</p>
-                            </div>
-                            <p class="w-100 text-center bg-dark text-white">Ver más..</p>
-                        </a>
+            <div class="cardDestacados">
+
+                <a class="text-decoration-none text-black" href="relieveBaldosa.html?id=1">
+                    <img src="relieve/colonial.png" alt="Baldosa con relieve Colonial">
+                    <div class="contenedorPdestacados">
+                        <p>Colonial</p>
+                        <p>25X25</p>
                     </div>
-
-                    <div class="cardDestacados">
-
-                        <a class="text-decoration-none text-black" href="baldosa.html?id=002">
-                            <img src="img/destacado1.jpg" alt="">
-                            <div class="contenedorPdestacados">
-                                <p>SKU 002</p>
-                                <p>20X20</p>
-                            </div>
-                            <p class="w-100 text-center bg-dark text-white">Ver más..</p>
-                        </a>
-                    </div>
-
-                    <div class="cardDestacados">
-
-                        <a class="text-decoration-none text-black" href="baldosa.html?id=002">
-                            <img src="img/destacado1.jpg" alt="">
-                            <div class="contenedorPdestacados">
-                                <p>SKU 002</p>
-                                <p>20X20</p>
-                            </div>
-                            <p class="w-100 text-center bg-dark text-white">Ver más..</p>
-                        </a>
-                    </div>
-
-                    <div class="cardDestacados">
-
-                        <a class="text-decoration-none text-black" href="baldosa.html?id=002">
-                            <img src="img/destacado1.jpg" alt="">
-                            <div class="contenedorPdestacados">
-                                <p>SKU 002</p>
-                                <p>20X20</p>
-                            </div>
-                            <p class="w-100 text-center bg-dark text-white">Ver más..</p>
-                        </a>
-                    </div>
-
-                    <div class="cardDestacados">
-
-                        <a class="text-decoration-none text-black" href="baldosa.html?id=002">
-                            <img src="img/destacado1.jpg" alt="">
-                            <div class="contenedorPdestacados">
-                                <p>SKU 002</p>
-                                <p>20X20</p>
-                            </div>
-                            <p class="w-100 text-center bg-dark text-white">Ver más..</p>
-                        </a>
-                    </div>
-
-                </div>
-
+                    <p class="w-100 text-center bg-dark text-white">Ver más..</p>
+                </a>
             </div>
 
 
-        </div>
+            <div class="cardDestacados">
+
+                <a class="text-decoration-none text-black" href="baldosa.html?id=025">
+                    <img src="mosaicos/full3.png" alt="Baldosa hexagonal de mosaico">
+                    <div class="contenedorPdestacados">
+                        <p>SKU 025</p>
+                        <p>20X23</p>
+                    </div>
+                    <p class="w-100 text-center bg-dark text-white">Ver más..</p>
+                </a>
+            </div>
+
+
+
+
+            <div class="cardDestacadoPrincipal" id="destacadoPrincipal">
+
+                <a class="text-decoration-none text-black" href="bacha.html?id=2">
+                    <img src="bachas/png.png" alt="bacha para baños para combinar con baldosas calcáreas">
+                    <div class="contenedorPdestacados">
+                        <p>Bacha Cuadrada</p>
+                        <p>39x39x12</p>
+                    </div>
+                    <p class="w-100 text-center bg-dark text-white">Ver más..</p>
+                </a>
+            </div>
+
+
+
+            <div class="cardDestacados">
+
+                <a class="text-decoration-none text-black" href="baldosa.html?id=024">
+                    <img src="mosaicos/doblesemi.png" alt="Baldosa mosaico doble semicircular ">
+                    <div class="contenedorPdestacados">
+                        <p>SKU 024</p>
+                        <p>20X20</p>
+                    </div>
+                    <p class="w-100 text-center bg-dark text-white">Ver más..</p>
+                </a>
+            </div>
+
+
+            <div class="cardDestacados">
+
+                <a class="text-decoration-none text-black" href="relieveBaldosa.html?id=2">
+                    <img src="relieve/flor.png" alt="baldosa con relieve Flor">
+                    <div class="contenedorPdestacados">
+                        <p>Flor</p>
+                        <p>25X25</p>
+                    </div>
+                    <p class="w-100 text-center bg-dark text-white">Ver más..</p>
+                </a>
+            </div>
+
+
 
 
 
@@ -503,24 +519,6 @@
     </section>
 
 
-    <section class="d-flex flex-column justify-content-center align-items-center animar">
-
-
-
-        <div class=" mb-2">
-            <svg id="flechaIzquierdaDestacados" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                class="bi bi-chevron-compact-left flechaDestacado" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223" />
-            </svg>
-
-            <svg id="flechaDerechaDestacados" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                class="bi bi-chevron-compact-right flechaDestacado" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671" />
-            </svg>
-        </div>
-    </section>
 
 
 
@@ -529,7 +527,7 @@
         <div class="contenedorPiscina ">
             <a href="piscina.html">
                 <img src="https://atermicoslobos.com.ar/wp-content/uploads/2022/08/Atermicos-Lobos-Bordes-Piscina-07.jpg"
-                    alt="">
+                    alt="Baldosa de piscina Uruguay">
 
                 <div class="bloquePiscina">
                     <p>BALDOSAS DE PISCINA</p>
@@ -544,7 +542,7 @@
 
             <div class="contenedorCard">
                 <a href="mosaicos.html">
-                    <img src="img/mosaicos.jpg" alt="">
+                    <img src="img/mosaicos.jpg" alt="Pisos de mosaicos Uruguay">
 
                     <div class="bloquePiscina">
                         <p>MOSAICOS</p>
@@ -554,7 +552,7 @@
 
             <div class="contenedorCard">
                 <a href="lisas.html">
-                    <img src="img/lisas.jpg" alt="">
+                    <img src="img/lisas.jpg" alt="baldosas calcáreas lisas">
 
                     <div class="bloquePiscina">
                         <p>LISAS</p>
@@ -565,7 +563,7 @@
             <div class="contenedorCard">
 
                 <a href="relieve.html">
-                    <img src="img/otros.jpg" alt="">
+                    <img src="img/otros.jpg" alt="baldosas con relieve en Uruguay">
 
                     <div class="bloquePiscina">
                         <p>CON RELIEVE</p>
@@ -576,7 +574,7 @@
 
             <div class="contenedorCard">
                 <a href="vereda.html">
-                    <img src="img/vereda.jpg" alt="">
+                    <img src="img/vereda.jpg" alt="baldosas de vereda autorizadas montevideo, Uruguay">
 
                     <div class="bloquePiscina">
                         <p>VEREDA</p>
@@ -600,7 +598,7 @@
 
             <div class="cardsGaleria">
                 <a href="banos.html">
-                    <img src="img/BANO.jpeg" alt="">
+                    <img src="img/BANO.jpeg" alt="baños con baldosas calcáreas en Uruguay">
 
                     <div class="bloquePiscina">
                         <p>BAÑOS</p>
@@ -612,7 +610,7 @@
             <div class="cardsGaleria">
                 <a href="cocinas.html">
 
-                    <img src="img/cocina.jpg" alt="">
+                    <img src="img/cocina.jpg" alt="Cocinas con baldosas calcáreas en Uruguay">
 
                     <div class="bloquePiscina">
                         <p>COCINAS</p>
@@ -625,7 +623,7 @@
 
                 <a href="locales.html">
 
-                    <img src="img/LOCALES.jpg" alt="">
+                    <img src="img/LOCALES.jpg" alt="Locales comerciales con baldosas calcáreas en Uruguay">
 
                     <div class="bloquePiscina">
                         <p>LOCALES</p>
@@ -637,7 +635,7 @@
             <div class="cardsGaleria">
                 <a href="exteriores.html">
 
-                    <img src="img/exteriores.jpeg" alt="">
+                    <img src="img/exteriores.jpeg" alt="Patios exteriores con baldosas calcáreas en Uruguay">
 
                     <div class="bloquePiscina">
                         <p>EXTERIORES</p>
@@ -650,7 +648,7 @@
 
                 <a href="interiores.html">
 
-                    <img src="img/interiores.jpeg" alt="">
+                    <img src="img/interiores.jpeg" alt="interiores con baldosas calcáreas en Uruguay">
 
                     <div class="bloquePiscina">
                         <p>INTERIORES</p>
@@ -668,15 +666,16 @@
 
     <section class="barraCatalogo animar">
 
-        <img class="motivoBarraCatalogo" src="img/motivoBarraCatalogo.png" alt="">
+        <img class="motivoBarraCatalogo" src="img/motivoBarraCatalogo.png"
+            alt="Catalogo con baldosas calcáreas de mosaico">
 
         <div class="d-flex flex-column  justify-content-center align-items-center m-5">
             <h2>CATALOGO</h2>
             <h4>Mosaicos</h4>
-            <a href="catalogo.html" class="text-white">Click aqui</a>
+            <a href="catalogoMosaicos.pdf" class="text-white">Click aqui</a>
         </div>
 
-        <img class="motivoBarraCatalogo" src="img/motivoBarraCatalogo.png" alt="">
+        <img class="motivoBarraCatalogo" src="img/motivoBarraCatalogo.png" alt="diseño petalos baldosas">
 
     </section>
 
@@ -684,29 +683,18 @@
     <section class="proyectosYpreguntas animar">
 
 
-        <div class="proyectos">
 
-            <a href="proyectos.html">
-                <img src="img/freepik__upload__93539.jpeg" alt="">
-                <div class="">
-                    <p class="text-white m-0 text-center">MIRA NUESTROS <br> ULTIMOS PROYECTOS</p>
-                </div>
-            </a>
-        </div>
 
 
         <div class="preguntas">
 
             <a href="faq.html">
-                <div class="d-flex justify-content-center align-items-center">
 
 
-
-                    <p class="text-white m-0 text-center">Preguntas Frecuentes</p>
-
-                </div>
-
-                <img src="img/preguntas.jpg" alt="">
+                <img class="d-none d-lg-block" src="img/faq.jpg" alt="preguntas frecuentes baldosas calcáreas">
+                <img class="d-block d-md-none" src="img/faq2.jpg" alt="preguntas frecuentes baldosas calcáreas">
+                <img class="d-none d-lg-none d-md-block" src="img/faq3.jpg"
+                    alt="preguntas frecuentes baldosas calcáreas">
 
             </a>
         </div>
@@ -726,15 +714,19 @@
             <div class="footerEmpresa">
 
 
-                <img src="img/logo3.png" alt="Baldosas">
+                <img src="img/logo3.png" alt="Baldosas lv">
+
+                <p>Calcareas Uruguay SAS</p>
 
                 <div class="redesSociales">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-                    </svg>
+                    <a class="text-black" href="https://www.instagram.com/baldosascalcareaslv/">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg>
+                    </a>
 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook"
                         viewBox="0 0 16 16">
@@ -742,23 +734,33 @@
                             d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
                     </svg>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-tiktok"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
-                    </svg>
+                    <a class="text-black" href="https://www.tiktok.com/@baldosascalcareaslv?_t=ZM-8u8sk9zRRDR&_r=1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-tiktok"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+                        </svg>
+                    </a>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-youtube"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
-                    </svg>
-
+                    <a class="text-black" href="https://www.youtube.com/@Baldosaslv">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-youtube"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                        </svg>
+                    </a>
                 </div>
 
 
             </div>
 
+
+            <div class="unit">
+
+                <a href="https://www.unit.org.uy/normalizacion/norma/625/">
+                    <img src="img/unit.png" alt="certificado baldosas unit 7:1942">
+                </a>
+            </div>
 
 
             <div class="footerPaginas">

@@ -24,7 +24,7 @@ function renderizarMosaicos(data) {
       <div dat class="cardProductos">
       <a class="m-0 p-0 text-black text-decoration-none" href="piedrasB.html?id=${element.id}">
 
-      <img src="piedra/${element.img}" alt="">
+      <img src="piedra/${element.img}" alt="Piedra arenisca">
         <div class="detalleCardProductos">
           <p>${element.titulo}</p>
           <p>${element.tamaño}</p>

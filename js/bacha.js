@@ -25,7 +25,7 @@ function renderizarMosaicos(data) {
     contenedorColores.innerHTML += `
     
    
-   <img class="coloresBachas" src="coloresBachas/${element.img}" alt="">
+   <img class="coloresBachas" src="coloresBachas/${element.img}" alt="Colores para Bacha">
     
     `;
   });
@@ -83,7 +83,7 @@ function traerDataLisas(data) {
   classCImagenP.innerHTML=`
   
    <a href="bachas/${mosaico.img}" id="enlaceImagen" data-fancybox="gallery" class="m-0 p-0">
-    <img id="contenedorImagenPrincipal" src="bachas/${mosaico.img}" alt="">
+    <img id="contenedorImagenPrincipal" src="bachas/${mosaico.img}" alt="Bacha ${mosaico.titulo}">
   </a>
   
   `

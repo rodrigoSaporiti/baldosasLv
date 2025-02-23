@@ -75,7 +75,8 @@ input[type="radio"]:checked + label::after {
 }
 
 .cardProductos img{
-    width: 100%;   
+    width: 100%;
+    aspect-ratio: 1 / 1; 
     object-fit: contain;
 }
 
@@ -92,6 +93,7 @@ input[type="radio"]:checked + label::after {
 
 .detalleCardProductos p{
     margin: 0;
+    font-size: small;
 }
 
 
@@ -117,7 +119,7 @@ input[type="radio"]:checked + label::after {
     margin-top: 0;
   }
 
-
+  
 
   /* Extra pequeño (mobile, en orientación vertical) */
 @media (max-width: 575px) {

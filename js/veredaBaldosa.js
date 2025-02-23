@@ -75,6 +75,7 @@ function traerDataLisas(data) {
  });
 
   contenedorImagenPrincipal.src = `vereda/${mosaico.img}`
+  contenedorImagenPrincipal.alt = `Baldosa de vereda ${mosaico.titulo}`
 
 
 

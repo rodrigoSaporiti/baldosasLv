@@ -23,7 +23,7 @@ function renderizarMosaicos(data) {
     
       <div dat class="cardProductos">
       <a class="m-0 p-0 text-black text-decoration-none" href="baldosa.html?id=${element.sku}">
-        <img lazy="loading" src="mosaicos/${element.img}" alt="">
+        <img lazy="loading" src="mosaicos/${element.img}" alt="Baldosa mosaico calcárea">
         <div class="detalleCardProductos">
           <p>SKU ${element.sku}</p>
           <p>${element.tamaño}</p>

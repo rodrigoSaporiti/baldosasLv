@@ -8,8 +8,13 @@
 }
 
 
-.contenedorContacto img{
-    width:  70%;
+.contenedorContacto a{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+.contenedorContacto a img{
+    width:  100%;
     height: 225px;
     object-fit: cover;
 }

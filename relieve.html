@@ -56,8 +56,22 @@
 
   <nav>
 
-    <div id="pantallaNegra" class="pantallaNegra d-none"></div>
-    <div id="pantallaNegraProductos" class="pantallaNegra d-none"></div>
+    <div id="pantallaNegra" class="pantallaNegra d-none">
+
+      <div id="closeMenuMobile" class="d-lg-none closeMenuMobile">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle"
+          viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+          <path
+            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+        </svg>
+
+        <p class="ms-1 m-0">CLOSE</p>
+
+      </div>
+
+    </div>
     <div id="pantallaNegraProductos" class="pantallaNegra d-none"></div>
 
 
@@ -75,7 +89,7 @@
           d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
       </svg>
       <a class="m-0 p-0 text-black d-flex text-decoration-none align-items-center" href="index.html">
-        <img class="logoNav" src="img/logo.png" alt="">
+        <img class="logoNav" src="img/logo.png" alt="Baldosas lv">
         <h1 class="titulo dm-serif-display-regular">BALDOSAS LV</h1>
       </a>
     </div>
@@ -85,48 +99,69 @@
     <div id="linksNav" class="linksNav d-none  d-lg-flex">
 
 
-      <div id="closeMenuMobile" class="d-lg-none closeMenuMobile">
-
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle"
-          viewBox="0 0 16 16">
-          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
-          <path
-            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
-        </svg>
-
-        <p class="ms-1">CLOSE</p>
-
-      </div>
 
 
-      <a href="index.html" class="border-bottom border-3 border-black ">INICIO</a>
+      <a href="index.html" class=" ">INICIO</a>
 
 
       <p class="d-none d-lg-block">|</p>
 
 
-      <div class="dropdown">
-        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <div class="dropdown d-none d-lg-block">
+        <button class="btn dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
           PRODUCTOS
         </button>
         <ul class="dropdown-menu dropdown-menu-end">
-          <li><a class="dropdown-item" href="relieve.html">Con Relieve</a></li>
+          <li><a class="dropdown-item " href="relieve.html">Con relieve</a></li>
           <li><a class="dropdown-item" href="lisas.html">Lisas</a></li>
           <li><a class="dropdown-item" href="mosaicos.html">Mosaicos</a></li>
           <li><a class="dropdown-item" href="piscina.html">Piscina</a></li>
           <li><a class="dropdown-item" href="escalones.html">Escalones y zócalos</a></li>
           <li><a class="dropdown-item" href="vereda.html">Vereda</a></li>
+          <li><a class="dropdown-item" href="bachas.html">Bachas</a></li>
+          <li><a class="dropdown-item" href="selladores_limpiadores.html">Selladores</a></li>
         </ul>
       </div>
 
 
+      <div class="accordion d-lg-none" id="accordionProductos">
+        <div class="accordion-item border-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseProductos" aria-controls="collapseProductos">
+              PRODUCTOS
+            </button>
+          </h2>
+          <div id="collapseProductos" class="accordion-collapse collapse" data-bs-parent="#accordionProductos">
+            <div class="accordion-body p-0">
+              <ul class="list-unstyled acordeonResponsive">
+                <button class="w-100 btn btn-light p-2"><a href="relieve.html">Con relieve</a></button>
+                <button class="w-100 bg-white btn btn-light p-2"><a class="bg-light"
+                    href="lisas.html">Lisas</a></button>
+                <button class="w-100 bg-light btn btn-light p-2"><a href="mosaicos.html">Mosaicos</a></button>
+                <button class="w-100 bg-white btn btn-light p-2"><a href="piscina.html">Piscina</a></button>
+                <button class="w-100 bg-light btn btn-light p-2"><a href="escalones.html">Escalones y
+                    zócalos</a></button>
+                <button class="w-100 bg-white btn btn-light p-2"><a href="vereda.html">Vereda</a></button>
+                <button class="w-100 bg-light btn btn-light p-2"><a href="bachas.html">Bachas</a></button>
+                <button class="w-100 bg-white btn btn-light p-2"><a
+                    href="selladores_limpiadores.html">Selladores</a></button>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 
 
       <p class="d-none d-lg-block">|</p>
 
-      <div class="dropdown">
+
+
+
+      <div class="dropdown d-none d-lg-block">
         <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           GALERIA POR SECCIÓN
         </button>
@@ -141,9 +176,37 @@
       </div>
 
 
+      <div class="accordion d-lg-none" id="accordionExample">
+        <div class="accordion-item border-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              GALERIA POR SECCIÓN
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+            <div class="accordion-body p-0">
+
+              <ul class="list-unstyled acordeonResponsive">
+                <button class="w-100 bg-light btn btn-light p-2"><a href="banos.html">Baños</a></button>
+                <button class="w-100 bg-white btn btn-light p-2"><a href="cocinas.html">Cocinas</a></button>
+                <button class="w-100 bg-light btn btn-light p-2"><a class="" href="dameros.html">Dameros</a></button>
+                <button class="w-100 bg-white btn btn-light p-2"><a href="locales.html">Locales</a></button>
+                <button class="w-100 bg-light btn btn-light p-2"><a href="exteriores.html">Exteriores</a></button>
+                <button class="w-100 bg-white btn btn-light p-2"><a href="interiores.html">Interiores</a></button>
+
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
       <p class="d-none d-lg-block">|</p>
 
-      <div class="dropdown">
+      <div class="dropdown d-none d-lg-block">
         <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           GALERIA POR COLOR
         </button>
@@ -162,26 +225,75 @@
         </ul>
       </div>
 
-      <p class="d-none d-lg-block">|</p>
 
-      <div class="dropdown">
-        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          CATALOGO
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="banos.html">Mosaicos</a></li>
-          <li><a class="dropdown-item" href="cocinas.html">Lisas</a></li>
+      <div class="accordion d-lg-none" id="accordionColores">
+        <div class="accordion-item border-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseColores" aria-controls="collapseColores">
+              GALERIA POR COLOR
+            </button>
+          </h2>
+          <div id="collapseColores" class="accordion-collapse collapse" data-bs-parent="#accordionColores">
+            <div class="accordion-body p-0">
+              <ul class="list-unstyled acordeonResponsive">
 
-        </ul>
+                <button class="w-100 bg-light btn btn-light p-2"><a href="amarillas.html">Amarillas</a></button>
+                <button class="w-100 bg-white btn btn-light p-2"><a href="azules.html">Azules</a></button>
+                <button class="w-100 bg-light btn btn-light p-2"><a href="blancas.html">Blancas</a></button>
+                <button class="w-100 bg-white btn btn-light p-2"><a href="cueros.html">Cueros</a></button>
+                <button class="w-100 bg-light btn btn-light p-2"><a href="grises.html">Grises</a></button>
+                <button class="w-100 bg-white btn btn-light p-2"><a href="negras.html">Negras</a></button>
+                <button class="w-100 bg-light btn btn-light p-2"><a href="rojas.html">Rojas</a></button>
+                <button class="w-100 bg-white btn btn-light p-2"><a href="verdes.html">Verdes</a></button>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
 
 
 
 
-
       <p class="d-none d-lg-block">|</p>
 
-      <a href="proyectos.html">PROYECTOS</a>
+      <div class="dropdown d-none d-lg-block">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          CATÁLOGO
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="catalogoMosaicos.pdf">Mosaicos</a></li>
+          <li><a class="dropdown-item" href="catalogoLisas.pdf">Lisas</a></li>
+
+        </ul>
+      </div>
+
+
+      <div class="accordion d-lg-none" id="accordionExample">
+        <div class="accordion-item border-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapseOne">
+              CATÁLOGO
+            </button>
+          </h2>
+          <div id="collapse5" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+            <div class="accordion-body p-0">
+
+              <ul class="list-unstyled acordeonResponsive">
+                <button class="w-100 bg-light btn btn-light p-2"><a class="w-100"
+                    href="catalogoMosaicos.pdf">Mosaicos</a></button>
+                <button class="w-100 bg-white btn btn-light p-2"><a href="catalogoLisas.pdf">Lisas</a></button>
+
+
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
 
       <p class="d-none d-lg-block">|</p>
 
@@ -198,7 +310,6 @@
 
 
   </nav>
-
 
 
   <div class="contentWhiteResponsive">
@@ -270,6 +381,7 @@
         </div>
 
 
+
         <input type="radio" name="talla" value="relieve" id="relieve">
         <label for="relieve">Con relieve</label>
 
@@ -293,6 +405,10 @@
 
         <input type="radio" name="talla" value="bachas" id="bachas">
         <label for="bachas">Bachas</label>
+
+        <input type="radio" name="talla" value="selladores_limpiadores" id="selladores_limpiadores">
+        <label for="selladores_limpiadores">Selladores</label>
+
 
 
         <button class="btn btn-dark d-sm-none  w-50 mt-5">OK</button>
@@ -345,7 +461,7 @@
       <div class="footerEmpresa">
 
 
-        <img src="img/logo3.png" alt="Baldosas">
+        <img src="img/logo3.png" alt="Baldosas lv">
 
         <div class="redesSociales">
 

@@ -43,7 +43,7 @@ fetch(`json/${seccion}.json`)
         
       <div class="cardImg">
     <a href="${seccion}/${element.nombre}" data-fancybox="galeria">
-        <img src="${seccion}/${element.nombre}" alt="">
+        <img src="${seccion}/${element.nombre}" alt="Baldosas calcáreas en ${seccion}">
     </a>
 </div>
 

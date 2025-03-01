@@ -24,7 +24,7 @@ function renderizarMosaicos(data) {
       <div dat class="cardProductos">
       <a class="m-0 p-0 text-black text-decoration-none" href="relieveBaldosa.html?id=${element.id}">
 
-      <img src="relieve/${element.img}" alt="Baldosas con relieve en Uruguay">
+      <img src="secciones/relieve/${element.img}" alt="Baldosas con relieve en Uruguay">
         <div class="detalleCardProductos">
           <p>${element.titulo}</p>
           <p>${element.tamaño}</p>

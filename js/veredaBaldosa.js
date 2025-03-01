@@ -59,7 +59,7 @@ const productId = urlParams.get('id');
 const textSKU = document.querySelectorAll("#textSKU")
 const textTamano = document.querySelector("#tamano")
 
-
+const aFancyBox = document.getElementById("aFancyBox");
 
 // Función para renderizar las tarjetas en el contenedor
 function traerDataLisas(data) {
@@ -73,13 +73,13 @@ function traerDataLisas(data) {
 
  textSKU.forEach(element => { element.textContent = `${mosaico.titulo}`;
  });
-
-  contenedorImagenPrincipal.src = `vereda/${mosaico.img}`
+  aFancyBox.href = `secciones/vereda/${mosaico.img}`
+  contenedorImagenPrincipal.src = `secciones/vereda/${mosaico.img}`
   contenedorImagenPrincipal.alt = `Baldosa de vereda ${mosaico.titulo}`
 
 
 
-  
+    
   const contenedorPrincipal = document.getElementById("contenedorPrincipal");
   const todasLasImagenes = contenedorPrincipal.querySelectorAll("img");
   console.log(todasLasImagenes)
@@ -105,20 +105,6 @@ function traerDataLisas(data) {
   });
   
   
-  const imagenGrande = document.getElementById("imagenGrande");
-  const imagenEnGrande = document.getElementById("imagenEnGrande");
-  
-  
-  // cierre del close 
-  
-  const closeImagenGrande = document.getElementById("closeImagenGrande");
-  
-  closeImagenGrande.addEventListener("click",()=>{
-  
-      imagenEnGrande.classList.toggle("d-none")
-  
-  
-  })
   
 
 }

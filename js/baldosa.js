@@ -76,9 +76,9 @@ function traerDataMosaico(data) {
 
  textSKU.forEach(element => { element.textContent = `${mosaico.sku}`;});
 
-  contenedorImagenPrincipal.src = `mosaicos/${mosaico.img}`
+  contenedorImagenPrincipal.src = `secciones/mosaicos/${mosaico.img}`
   contenedorImagenPrincipal.alt = "Baldosa mosaico calcárea"
-  enlaceImagen.href = `mosaicos/${mosaico.img}`
+  enlaceImagen.href = `secciones/mosaicos/${mosaico.img}`
   contenedorSegundaImagen.src = `mosaicos2/${mosaico.sku}.jpg`
   contenedorSegundaImagen.alt = "Baldosa mosaico calcárea"
   enlaceImagen2.href = `mosaicos2/${mosaico.sku}.jpg`
@@ -102,7 +102,7 @@ function traerDataMosaico(data) {
  <div class="masBaldosas"">
       <div dat class="cardInteresantes">
       <a class="m-0 p-0 text-black text-decoration-none" href="baldosa.html?id=${mosaico1.sku}">
-        <img lazy="loading" src="mosaicos/${mosaico1.img}" alt="Baldosa mosaico calcárea">
+        <img lazy="loading" src="secciones/mosaicos/${mosaico1.img}" alt="Baldosa mosaico calcárea">
         <div class="detalleCardProductos">
           <p>SKU ${mosaico1.sku}</p>
           <p>${mosaico1.tamaño}</p>
@@ -113,7 +113,7 @@ function traerDataMosaico(data) {
      
    <div dat class="cardInteresantes">
       <a class="m-0 p-0 text-black text-decoration-none" href="baldosa.html?id=${mosaico2.sku}">
-        <img lazy="loading" src="mosaicos/${mosaico2.img}" alt="Baldosa mosaico calcárea">
+        <img lazy="loading" src="secciones/mosaicos/${mosaico2.img}" alt="Baldosa mosaico calcárea">
         <div class="detalleCardProductos">
           <p>SKU ${mosaico2.sku}</p>
           <p>${mosaico2.tamaño}</p>
@@ -125,7 +125,7 @@ function traerDataMosaico(data) {
 
          <div dat class="cardInteresantes">
       <a class="m-0 p-0 text-black text-decoration-none" href="baldosa.html?id=${mosaico3.sku}">
-        <img lazy="loading" src="mosaicos/${mosaico3.img}" alt="Baldosa mosaico calcárea">
+        <img lazy="loading" src="secciones/mosaicos/${mosaico3.img}" alt="Baldosa mosaico calcárea">
         <div class="detalleCardProductos">
           <p>SKU ${mosaico3.sku}</p>
           <p>${mosaico3.tamaño}</p>

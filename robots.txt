@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /relieveBaldosa.html
+Disallow: /lisa.html
+Disallow: /baldosa.html
+Disallow: /piscinaBaldosa.html
+Disallow: /piedrasB.html
+Disallow: /escaloneszocalos.html
+Disallow: /veredaBaldosa.html
+Disallow: /bacha.html
+Disallow: /sellador_limpiador.html
+
+Sitemap: https://baldosaslv.uy/sitemap.xml
